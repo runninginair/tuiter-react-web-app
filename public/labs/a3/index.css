@@ -266,6 +266,7 @@ p#id-selector-2 { background-color: yellow; color: black; }
      
 
     /* 5.8 Media queries (5pts) */
+/* 
 @media (min-width: 0px)
     and (max-width: 600px) {
     body {
@@ -321,7 +322,7 @@ p#id-selector-2 { background-color: yellow; color: black; }
     background-color: blue;
     color: white;
   }
-}
+} */
 
 
  
