@@ -1,0 +1,88 @@
+
+/*  A-3 criteria
+
+    4 Tuiter (50pts)  
+    
+    Background color is black.
+    Borders are rgb(47, 51, 54).
+
+    All classes must be prefixed with "wd-". 
+
+    The wireframe shows at least one example of different types of posts labeled C, D, and E.
+    For this assignment, create at least 2 examples of each.
+
+    If a size is not explicitly mentioned, you must still make an effort to make your content
+    look as close to the wireframe as possible.
+*/
+
+/* At the top there's an input field with rounded corners and a placeholder that
+reads "Search Tuiter". The color of the text is white and the background color is dark gray.
+12px from the right border there's a link in the form of a gear that references "explore-settings.html"
+*/
+.wd-css-901oao {
+    border: 0 solid black;
+    box-sizing: border-box;
+    color: rgba(0,0,0,1.00);
+    display: inline;
+    font: 14px -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    display: flex;
+
+    line-height: 20px;
+    min-width: 0px;
+    word-wrap: break-word;
+}
+
+.wd-input {
+    background-color: darkgray;
+    color: white;
+    border: 1px rgb(47, 51, 54) solid;
+    border-bottom: none;
+    font-family: inherit;
+    font-size: inherit;
+    height: 100%;
+    outline: 0;
+    padding-inline-end: 12px;
+    padding-inline-start: 52px;
+    position: relative;
+    width: 100%;
+
+    appearance: none;
+    border-radius: 24px;
+    border-width: 0px;
+    box-sizing: border-box;
+    outline-style: none;
+    padding: 12px;
+    margin-right: 150px;
+
+}
+
+#wd-parent { white-space: nowrap; }
+.wd-child { display: inline-block; }
+.wd-margin-all-around { margin: 16px; }
+
+/* All content below is offset 16px from the left border. */
+.wd-padding-left { padding-left: 16px; }
+.wd-padding-right { padding-right: 16px; }
+.wd-padding-fat { padding: 16px; }
+
+.wd-rounded-corners-all-around { border-radius: 10px; }
+
+.wd-grid-row { clear: both; }
+.wd-grid-col-half-page { width: 50%; float: left; }
+.wd-grid-col-fifth-page { width: 18%; float: right; }
+.wd-grid-col-four-fifths-page { width: 78%; float: left; }
+
+
+
+ 
