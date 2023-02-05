@@ -1,16 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- <head>
-   <meta charset="UTF-8">
-   <title>Lab3 CSS</title>
-</head> -->
 <head>
-    <!--style>
+    <!-- <style>
         p {
             background-color: blue;
             color: white;
         }
-    </style-->
+    </style> -->
     <link href="index.css"
           rel="stylesheet"/>
  </head>
@@ -146,42 +142,6 @@
         </div>
     </div><br/>
 
-    <!-- /* 3.2.4 More style class */ -->
-    <div class="slctr-11"> <h4>class slctr-11 COVID-19: News and Updates</h4>
-        <p>.slctr-11 { background-color: black; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif; }</p> </div>
-    <div class="slctr-12"> <h4>class slctr-12 COVID-19: News and Updates</h4>
-        <p>.slctr-12 { background-color: gray; color: coral; font-family: 'Courier New', Courier, monospace; }</p> </div>
-    <div class="slctr-13"><h4>class slctr-13 COVID-19: News and Updates</h4>
-        <p>.slctr-13 { background-color: red; color: blueviolet; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }</p> </div>
-    <div class="slctr-14"><h4>class slctr-14 COVID-19: News and Updates</h4>
-        <p>.slctr-14 { background-color: yellow; color: purple; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }</p> </div>
-    <div class="slctr-15"><h4>class slctr-15 COVID-19: News and Updates</h4>
-        <p>.slctr-15 { background-color: green; color: aqua; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }</p> </div>
-    <div class="slctr-16"><h4>class slctr-16 COVID-19: News and Updates</h4>
-        <p>.slctr-16 { background-color: blue; color: teal; font-family: Georgia, 'Times New Roman', Times, serif; }</p> </div>
-    
-    <div class="slctr-26"><h4>class slctr-26</h4> <p>color: red</p> </div>
-    <div class="slctr-11 slctr-26"><h4>class slctr-26</h4> <p>.slctr-11 .slctr-27 { color: teal }</p> </div>
-
-    <div class="slctr-27"><h4>class slctr-27</h4> <p>color: teal</p> </div>
-    <div class="slctr-27"><h4>class slctr-27</h4> <p>.slctr-11 .slctr-27 { color: teal }</p> </div>
-    <div class="slctr-11">
-        <p>
-            <span>A slightly better way to configure the look and feel of a Web page is to declare CSS rules 
-                in the style tag in the header and then refer to the tag by their selector, </span>
-            <span class="slctr-26">
-            A slightly better way to configure the look and feel of a Web page is to declare CSS rules 
-            in the style tag in the header and then refer to the tag by their selector, 
-            </span>
-            <div class="slctr-27">
-                e.g., name, ID, or class. It's better because you can control the style of a whole page from
-                a central place instead of dealing with individual elements. To practice using the style tag,
-                copy and paste the highlighted style tag below at the end of the head tag as shown.
-            </div>
-        </p>
-    </div>
-
-
     <!-- 3.3 Styling color (5pts) -->
     <div>
         <!-- 3.3.1 Styling the foreground color (2.5pts)
@@ -276,8 +236,8 @@
     </div>
 
     <!-- 3.5 Styling dimensions (3pts) -->
-    <h2>3.5 Dimension</h2>
     <div>
+        <h2>3.5 Dimension</h2>
         <div class="dimension-portrait bg-color-yellow">
             Portrait
         </div>
@@ -293,17 +253,22 @@
     <!-- 3.6 Styling position (12pts) -->
     <!-- You can configure an element's position with the position property. The property has many possible values, but we'll explore relative, position, and static. -->
     <!-- 3.6.1 Styling relative position (2pts) -->
+    <div>
     <h2>3.6 Position</h2>
     <h3>3.6.1   Relative</h3>
-    <div>
-        <div class="bg-color-yellow dimension-portrait">
+        <div class="bg-color-yellow
+                    dimension-portrait">
             <div class="pos-relative-nudge-down-right">
                 Portrait
             </div>
         </div>
-        <div class="pos-relative-nudge-up-right bg-color-blue fg-color-white dimension-landscape">
+        
+        <div class="pos-relative-nudge-up-right
+                    bg-color-blue fg-color-white
+                    dimension-landscape">
             Landscape
         </div>
+        
         <div class="bg-color-red dimension-square">
             Square
         </div>
@@ -312,13 +277,19 @@
     <!-- 3.6.2 Styling absolute position (2pts) -->
     <h3>3.6.2   Absolute position</h3>
     <div class="pos-relative">
-        <div class="pos-absolute-10-10 bg-color-yellow dimension-portrait">
+        <div class="pos-absolute-10-10
+                    bg-color-yellow
+                    dimension-portrait">
             Portrait
         </div>
-        <div class="pos-absolute-50-50 bg-color-blue fg-color-white dimension-landscape">
+        <div class="pos-absolute-50-50
+                    bg-color-blue fg-color-white
+                    dimension-landscape">
             Landscape
         </div>
-        <div class="pos-absolute-120-20 bg-color-red dimension-square">
+        <div class="pos-absolute-120-20
+                    bg-color-red
+                    dimension-square">
             Square
         </div>
     </div><br/><br/><br/><br/><br/><br/><br/>
@@ -356,13 +327,20 @@
     <!-- 3.6.5 Floating content (2pts) -->
     <h2>3.6.5   Float</h2>
     <div>
-        <div class="float-left dimension-portrait bg-color-yellow">
+        <div class="float-left
+                    dimension-portrait
+                    bg-color-yellow">
                 Yellow</div>
-        <div class="float-left dimension-portrait bg-color-blue fg-color-white">
+        <div class="float-left
+                    dimension-portrait
+                    bg-color-blue fg-color-white">
                 Blue</div>
-        <div class="float-left dimension-portrait bg-color-red">
+        <div class="float-left
+                    dimension-portrait
+                    bg-color-red">
                 Red</div>
-        <img class="float-right" src="https://www.staradvertiser.com/wp-content/uploads/2021/08/web1_Starship-gap2.jpg"/>
+        <img class="float-right"
+                src="https://www.staradvertiser.com/wp-content/uploads/2021/08/web1_Starship-gap2.jpg"/>
         <div class="float-done"></div>
     </div>
 
@@ -431,6 +409,10 @@
         <img class="rotate-image" width="400px"
             src="https://s14085.pcdn.co/wp-content/uploads/2019/10/dowjones_chart_100_years_20200327.png"/>
 
+    <h3>Rotating another image</h3>
+        <img class="rotate-image" height="200px"
+            src="../../images/Rybakina_Elena.jpeg"/>
+
     <h3>5.4 Rotating a table</h3>
             <br/><br/>
             <table border="1" class="rotate-table">
@@ -451,41 +433,183 @@
             </table>
 
 
-            <h3>5.5 Linear gradients</h3>
-                <p class="gradients-linear">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
+    <h3>5.5 Linear gradients</h3>
+        <p class="gradients-linear">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            Duis aute irure dolor in reprehenderit.</p>
 
-            <h3>5.5.1 Radial gradients</h3>
-               <p class="gradients-radial">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
-
-            <h3>5.5.2 Positioning radial gradients</h3>
-                <p class="gradients-positioned">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
-
-            <h2>5.6 Animations</h2>
-                <h3> 5.6.1 Keyframe animations</h3>
-                    <p class="animation-keyframes">
-                        Use your own paragraph, sizes, keyframes, colors, and font sizes. In your own examples, play around with the following attributes
-                            animation-iteration-count: infinite;
-                            animation-direction: alternate;
-                    </p>
+        <p class="gradients-linear-2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            Duis aute irure dolor in reprehenderit.</p>
 
 
-            <div class="flex-container">
-                <div class="flex-box flex-box-1">Box 1</div>
-                    <div class="flex-box flex-box-2">
-                          Box 2 Box 2<br/>Box 2 Box 2
-                    </div>
-                    <div class="flex-box flex-box-3">
-                          Box 3 Box 3 Box 3<br/>Box 3 Box 3 Box 3<br/>Box 3 Box 3 Box 3
-                    </div>
-            </div>
 
-            <h2>5.8 Media queries</h2>
-            <p class="media-query">
-               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </p>
+    <h3>5.5.1 Radial gradients</h3>
+        <p class="gradients-radial">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            Duis aute irure dolor in reprehenderit.</p>
+
+        <p class="gradients-radial-2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            Duis aute irure dolor in reprehenderit.</p>            
+        
+        
+    <h3>5.5.2 Positioning radial gradients</h3>
+        <p class="gradients-positioned">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit.</p>
+
+        <p class="gradients-positioned-2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit.</p>
+
+
+
+    <h2>5.6 Animations</h2>
+    <h3> 5.6.1 Keyframe animations</h3>
+    <p class="animation-keyframes">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            Duis aute irure dolor in reprehenderit.</p>
+    
+    <p class="animation-keyframes-2">
+            Use your own paragraph, sizes, keyframes, colors, and font sizes.
+            In your own examples, play around with the following attributes
+            animation-iteration-count: infinite;
+            animation-direction: alternate; </p>
+
+
+    <h2>5.7 Flex (10pts) </h2>
+    <div class="flex-container-0">
+        <div class="flex-box flex-box-1">Box 1</div>
+        <div class="flex-box flex-box-2">
+            Box 2 Box 2<br/>Box 2 Box 2
+        </div>
+        <div class="flex-box flex-box-3">
+            Box 3 Box 3 Box 3<br/>Box 3 Box 3 Box 3<br/>Box 3 Box 3 Box 3
+        </div>
+    </div><br/>
+
+    <div class="flex-container-1">
+        <div class="flex-box flex-box-1">Box 1</div>
+        <div class="flex-box flex-box-2">
+            Box 2 Box 2<br/>Box 2 Box 2
+        </div>
+        <div class="flex-box flex-box-3">
+            Box 3 Box 3 Box 3<br/>Box 3 Box 3 Box 3<br/>Box 3 Box 3 Box 3
+        </div>
+    </div><br/>
+
+    <div class="flex-container-2">
+        <div class="flex-box flex-box-1">Box 1</div>
+        <div class="flex-box flex-box-2">
+            Box 2 Box 2<br/>Box 2 Box 2
+        </div>
+        <div class="flex-box flex-box-3">
+            Box 3 Box 3 Box 3<br/>Box 3 Box 3 Box 3<br/>Box 3 Box 3 Box 3
+        </div>
+    </div><br/>
+
+    <div class="flex-container-3">
+        <div class="flex-box flex-box-1">Box 1</div>
+        <div class="flex-box flex-box-2">
+            Box 2 Box 2<br/>Box 2 Box 2
+        </div>
+        <div class="flex-box flex-box-3">
+            Box 3 Box 3 Box 3<br/>Box 3 Box 3 Box 3<br/>Box 3 Box 3 Box 3
+        </div>
+    </div><br/>
+
+    <div class="flex-container-4">
+        <div class="flex-box flex-box-1">Box 1</div>
+        <div class="flex-box flex-box-2">
+            Box 2 Box 2<br/>Box 2 Box 2
+        </div>
+        <div class="flex-box flex-box-3">
+            Box 3 Box 3 Box 3<br/>Box 3 Box 3 Box 3<br/>Box 3 Box 3 Box 3
+        </div>
+    </div><br/>
+
+    <div class="flex-container-5">
+        <div class="flex-box flex-box-1">Box 1</div>
+        <div class="flex-box flex-box-2">
+            Box 2 Box 2<br/>Box 2 Box 2
+        </div>
+        <div class="flex-box flex-box-3">
+            Box 3 Box 3 Box 3<br/>Box 3 Box 3 Box 3<br/>Box 3 Box 3 Box 3
+        </div>
+    </div><br/>
+
+    <h3>5.7.2 Aligning flex elements vertically</h3>
+    <div class="flex-container-6">
+        <div class="flex-box flex-box-1">Box 1</div>
+        <div class="flex-box flex-box-2">
+            Box 2 Box 2<br/>Box 2 Box 2
+        </div>
+        <div class="flex-box flex-box-3">
+            Box 3 Box 3 Box 3<br/>Box 3 Box 3 Box 3<br/>Box 3 Box 3 Box 3
+        </div>
+    </div><br/>
+
+    <div class="flex-container-7">
+        <div class="flex-box flex-box-1">Box 1</div>
+        <div class="flex-box flex-box-2">
+            Box 2 Box 2<br/>Box 2 Box 2
+        </div>
+        <div class="flex-box flex-box-3">
+            Box 3 Box 3 Box 3<br/>Box 3 Box 3 Box 3<br/>Box 3 Box 3 Box 3
+        </div>
+    </div><br/>
+
+    <div class="flex-container-8">
+        <div class="flex-box flex-box-1">Box 1</div>
+        <div class="flex-box flex-box-2">
+            Box 2 Box 2<br/>Box 2 Box 2
+        </div>
+        <div class="flex-box flex-box-3">
+            Box 3 Box 3 Box 3<br/>Box 3 Box 3 Box 3<br/>Box 3 Box 3 Box 3
+        </div>
+    </div><br/>
+
+    <div class="flex-container-19">
+        <div class="flex-box flex-box-1">Box 1</div>
+        <div class="flex-box flex-box-2">
+            Box 1 Box 2<br/>Box 3 Box 4
+        </div>
+        <div class="flex-box flex-box-3">
+            Box 1 Box 2 Box 3<br/>Box 4 Box 5 Box 6<br/>Box 7 Box 8 Box 9
+        </div>
+    </div><br/>
+
+
+<!-- 5.8 Media queries (5pts) -->
+    <div class="media-query-2"> 
+
+    <h2>5.8 Media queries</h2>
+    <p class="media-query">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    
+    <p class="media-query-2"> 
+        Create examples of your own that define 3 different media rules for similar screen sizes.
+        Define a couple of elements, e.g., heading, paragraph, divs, and change their style as
+        the user resizes the screen</p>
+
+    </div>
 
 
 </body>
