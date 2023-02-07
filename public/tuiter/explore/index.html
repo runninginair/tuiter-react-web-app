@@ -4,148 +4,192 @@
    <meta charset="UTF-8">
    <title>Lab3 CSS</title>
 </head> -->
+
 <head>
-    <link href="../styles.css" rel="stylesheet"/>
-    <link href="index.css" rel="stylesheet"/>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <link href="../styles.css" rel="stylesheet" />
+
+    <link href="index.css" rel="stylesheet" />
+
+    <title>a4 Tuiter</title>
+
 </head>
 
-<body class="wd-bg-color-black wd-fg-color-white wd-font">
+<body>
+    <!-- <div class="container-fluid mt-4"> -->
+    <div class="container-fluid row mt-2">
 
-    <div class="wd-border-style wd-grid-row">
-        <div class="wd-grid-col-four-fifths-page wd-padding-fat">
-            <input id="input"
-                class="wd-input wd-padding-left wd-child"
-                type="search"
-                placeholder="Search Tuiter">
+        <div class="col-2 list-group">
+
+            <a href="#" class="list-group-item list-group-item-action">
+                <i class="fab fa-twitter" style="font-size: 1.2em;"></i></a>
+
+            <a href="../home.html" class="list-group-item list-group-item-action">
+                <i class="bi bi-house-heart-fill" style="font-size: 1.2em;"></i> Home</a>
+
+            <a href="../explore/index.html" class="list-group-item list-group-item-action active">
+                <i class="bi bi-hash" style="font-size: 1.2em;"></i> Explore</a>
+
+            <a href="#" class="list-group-item list-group-item-action">
+                <i class="bi bi-bell-fill" style="font-size: 1.2em;"></i> Notification</a>
+
+            <a href="#" class="list-group-item list-group-item-action">
+                <i class="bi bi-envelope-at-fill" style="font-size: 1.2em;"></i> Messages</a>
+
+            <a href="../bookmarks/index.html" class="list-group-item list-group-item-action">
+                <i class="bi bi-bookmark-fill" style="font-size: 1.2em;"></i> Bookmarks</a>
+
+            <a href="#" class="list-group-item list-group-item-action">
+                <i class="bi bi-list-check" style="font-size: 1.2em;"></i> Lists</a>
+
+            <a href="../profile.html" class="list-group-item list-group-item-action">
+                <i class="bi bi-person-fill" style="font-size: 1.2em;"></i> Profile</a>
+
+            <a href="#" class="list-group-item list-group-item-action">
+                <span style="font-size: 1.2em;">
+
+                    <i class="bi bi-three-dots bi-three-dots-red"></i>
+                </span> More</a><br />
+
+            <button class="btn btn-primary override-bs">Tweet</button><br />
+
+            <!-- <a href="#"
+            class="list-group-item list-group-item-action disabled"
+            tabindex="-1"
+            aria-disabled="true">Ender's Game</a> -->
+        </div><br />
+
+        <div class="col-6 list-group">
+
+            <div class="row">
+                <!-- <div class="row d-flex justify-content-center align-items-center"> -->
+                <div class="col row">
+
+                    <div class="col-11">
+                        <div class="form">
+                            <i class="fa fa-search" style="font-size: 1.2em;"></i>
+                            <input type="text" class="form-control form-input" placeholder="Search Tuiter...">
+                            <span class="left-pan"></span>
+                        </div>
+                    </div>
+                    <div class="col-1 float-right">
+                        <i class="bi bi-gear-fill" style="font-size: 1.8em; color: #0d6efd;"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-1">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#"> For you </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Trending</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" tabindex="-1">Sports</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" tabindex="-1">Entertainment</a>
+                    </li>
+                </ul><br />
+
+
+                <!-- <span class="list-group-item list-group-item-action ">
+                <div class="ytp-cued-thumbnail-overlay-image" style="background-image: url(&quot;https://i.ytimg.com/vi_webp/7CZTLogln34/maxresdefault.webp&quot;);"></div>
+            </span> -->
+
+                <a href="../home.html" class="list-group-item-action active">
+                    <img src="../../images/spaceX_starship.jpeg" class="img-fluid">
+                </a>
+
+                <a href="#" class="list-group-item list-group-item-action">
+                    <p>Web Development</p>
+                    <div>ReactJS <i class="bi bi-check-circle-fill"></i> - 2h</div>
+                    <p>React (also known as React.js or ReactJS) is a free and open-source front-end
+                        JavaScript library for building user interfaces based on UI components.
+                        It is maintained by Meta (formerly Facebook) and a community of individual
+                        developers and companies. React can be used as a base in the development
+                        of single-page, mobile, or server-rendered applications with frameworks
+                        like Next.js</p>
+                </a>
+
+                <a href="#" class="list-group-item list-group-item-action">
+                    <i class="bi bi-bell-fill" style="font-size: 1.2em;"></i> Notification</a>
+
+                <a href="#" class="list-group-item list-group-item-action">
+                    <i class="bi bi-envelope-at-fill" style="font-size: 1.2em;"></i> Messages</a>
+
+                <a href="../bookmarks/index.html" class="list-group-item list-group-item-action">
+                    <i class="bi bi-bookmark-fill" style="font-size: 1.2em;"></i> Bookmarks</a>
+
+                <a href="#" class="list-group-item list-group-item-action">
+                    <i class="bi bi-list-check" style="font-size: 1.2em;"></i> Lists</a>
+
+                <a href="../profile.html" class="list-group-item list-group-item-action">
+                    <i class="bi bi-person-fill" style="font-size: 1.2em;"></i> Profile</a>
+
+
+                <a href="#" class="list-group-item list-group-item-action">
+                    <span style="font-size: 1.2em;">
+
+                        <i class="bi bi-three-dots bi-three-dots-red"></i>
+                    </span> More</a><br />
+
+
+                <!-- <a href="#"
+            class="list-group-item list-group-item-action disabled"
+            tabindex="-1"
+            aria-disabled="true">Ender's Game</a> -->
+            </div><br />
         </div>
 
-        <!-- Zoom-in lens -->
-        <!-- <svg class="wd-svg-icon-gear" viewBox="0 0 20 20">
-            <path fill="none" d="M18.109,17.776l-3.082-3.081c-0.059-0.059-0.135-0.077-0.211-0.087c1.373-1.38,2.221-3.28,2.221-5.379c0-4.212-3.414-7.626-7.625-7.626c-4.212,0-7.626,3.414-7.626,7.626s3.414,7.627,7.626,7.627c1.918,0,3.665-0.713,5.004-1.882c0.006,0.085,0.033,0.17,0.098,0.234l3.082,3.081c0.143,0.142,0.371,0.142,0.514,0C18.25,18.148,18.25,17.918,18.109,17.776zM9.412,16.13c-3.811,0-6.9-3.089-6.9-6.9c0-3.81,3.089-6.899,6.9-6.899c3.811,0,6.901,3.09,6.901,6.899C16.312,13.041,13.223,16.13,9.412,16.13z"></path>
-        </svg> -->
+        <div class="col-4 list-group">
 
-          <div class="wd-grid-col-fifth-page">
-            <a href="explore-settings.html">
-          <!-- Gear-Icon SVG -->
-                <svg class="wd-svg-icon-gear wd-padding wd-rounded-corners-all-around wd-margin-all-around wd-float-right" viewBox="0 0 20 20">
-                    <path fill="none" d="M10.032,8.367c-1.112,0-2.016,0.905-2.016,2.018c0,1.111,0.904,2.014,2.016,2.014c1.111,0,2.014-0.902,2.014-2.014C12.046,9.271,11.143,8.367,10.032,8.367z M10.032,11.336c-0.525,0-0.953-0.427-0.953-0.951c0-0.526,0.427-0.955,0.953-0.955c0.524,0,0.951,0.429,0.951,0.955C10.982,10.909,10.556,11.336,10.032,11.336z"></path>
-                    <path fill="none" d="M17.279,8.257h-0.785c-0.107-0.322-0.237-0.635-0.391-0.938l0.555-0.556c0.208-0.208,0.208-0.544,0-0.751l-2.254-2.257c-0.199-0.2-0.552-0.2-0.752,0l-0.556,0.557c-0.304-0.153-0.617-0.284-0.939-0.392V3.135c0-0.294-0.236-0.532-0.531-0.532H8.435c-0.293,0-0.531,0.237-0.531,0.532v0.784C7.582,4.027,7.269,4.158,6.966,4.311L6.409,3.754c-0.1-0.1-0.234-0.155-0.376-0.155c-0.141,0-0.275,0.055-0.375,0.155L3.403,6.011c-0.208,0.207-0.208,0.543,0,0.751l0.556,0.556C3.804,7.622,3.673,7.935,3.567,8.257H2.782c-0.294,0-0.531,0.238-0.531,0.531v3.19c0,0.295,0.237,0.531,0.531,0.531h0.787c0.105,0.318,0.236,0.631,0.391,0.938l-0.556,0.559c-0.208,0.207-0.208,0.545,0,0.752l2.254,2.254c0.208,0.207,0.544,0.207,0.751,0l0.558-0.559c0.303,0.154,0.616,0.285,0.938,0.391v0.787c0,0.293,0.238,0.531,0.531,0.531h3.191c0.295,0,0.531-0.238,0.531-0.531v-0.787c0.322-0.105,0.636-0.236,0.938-0.391l0.56,0.559c0.208,0.205,0.546,0.207,0.752,0l2.252-2.254c0.208-0.207,0.208-0.545,0.002-0.752l-0.559-0.559c0.153-0.303,0.285-0.615,0.389-0.938h0.789c0.295,0,0.532-0.236,0.532-0.531v-3.19C17.812,8.495,17.574,8.257,17.279,8.257z M16.747,11.447h-0.653c-0.241,0-0.453,0.164-0.514,0.398c-0.129,0.496-0.329,0.977-0.594,1.426c-0.121,0.209-0.089,0.473,0.083,0.645l0.463,0.465l-1.502,1.504l-0.465-0.463c-0.174-0.174-0.438-0.207-0.646-0.082c-0.447,0.262-0.927,0.463-1.427,0.594c-0.234,0.061-0.397,0.271-0.397,0.514V17.1H8.967v-0.652c0-0.242-0.164-0.453-0.397-0.514c-0.5-0.131-0.98-0.332-1.428-0.594c-0.207-0.123-0.472-0.09-0.646,0.082l-0.463,0.463L4.53,14.381l0.461-0.463c0.169-0.172,0.204-0.434,0.083-0.643c-0.266-0.461-0.467-0.939-0.596-1.43c-0.06-0.234-0.272-0.398-0.514-0.398H3.313V9.319h0.652c0.241,0,0.454-0.162,0.514-0.397c0.131-0.498,0.33-0.979,0.595-1.43c0.122-0.208,0.088-0.473-0.083-0.645L4.53,6.386l1.503-1.504l0.46,0.462c0.173,0.172,0.437,0.204,0.646,0.083c0.45-0.265,0.931-0.464,1.433-0.597c0.233-0.062,0.396-0.274,0.396-0.514V3.667h2.128v0.649c0,0.24,0.161,0.452,0.396,0.514c0.502,0.133,0.982,0.333,1.433,0.597c0.211,0.12,0.475,0.089,0.646-0.083l0.459-0.462l1.504,1.504l-0.463,0.463c-0.17,0.171-0.202,0.438-0.081,0.646c0.263,0.448,0.463,0.928,0.594,1.427c0.061,0.235,0.272,0.397,0.514,0.397h0.651V11.447z"></path>
-                </svg>
+                <span class="list-group-item list-group-item-action" type="font-size: 1.2em"><b>Who to follow<b></span>
 
-            </a>
-          </div>
-          <div class="wd-float-done"></div>
+                <a href="../home.html" class="list-group-item list-group-item-action">
+                    <img src="../../images/Java_logo.png" class="wd-pic-logo"> Java
+                    <i class="bi bi-check-circle-fill"></i>
+                    <button class="btn btn-primary override-bs float-end mt-1">Follow</button><br />
+                </a>
+
+                <a href="#" class="list-group-item list-group-item-action">
+                    <img src="../../images/relativity_space_logo.avif" class="wd-pic-logo"> Relativity Space</a>
+
+                <a href="#" class="list-group-item list-group-item-action">
+                    <img src="../../images/virgin_logo.svg" class="wd-pic-logo"> Virgin Galactic</a>
+
+                <a href="../bookmarks/index.html" class="list-group-item list-group-item-action">
+                    <img src="../../images/NASA_400x400.jpeg" class="wd-pic-logo"> NASA</a>
+
+                <a href="#" class="list-group-item list-group-item-action">
+                    <img src="../../images/Tesla_logo_500x500.jpeg" class="wd-pic-logo"> Tesla</a>
+
+                <!-- <a href="#"
+            class="list-group-item list-group-item-action disabled"
+            tabindex="-1"
+            aria-disabled="true">Ender's Game</a> -->
+        </div><br />
+
+
     </div>
-
-    <nav id="wd-parent" class="wd-border-style wd-padding-left wd-grid-row wd-fg-color-other wd-padding-fat">
-        <div class="wd-fg-color-highlighted wd-child wd-padding-fat">
-            <b>For you</b>
-        </div>
-
-        <div class="wd-child wd-padding-fat">
-            <b>Trending</b>
-        </div>
-
-        <div class="wd-child wd-padding-fat">
-            <hb>COVID-19</b>
-        </div>
-        
-        <div class="wd-child wd-padding-fat">
-            <b>News</b>
-        </div>
-
-        <div class="wd-child wd-padding-fat">
-            <b>Sports</b>
-        </div>
-
-        <div class="wd-child wd-padding-fat">
-            <b>Entertainment</b>
-        </div>
-    </nav>
-
-    <div class="wd-border-style wd-padding-left wd-grid-row wd-padding-fat">
-        <p class="wd-fg-color-other wd-font-sm">Trending in Science</p>
-        <p><b>Starshop</b></p>
-        <p class="wd-fg-color-other wd-font-sm">55.5k Tuiters</p><br/>
-
-        <p class="wd-fg-color-other wd-font-sm">Sports Trending</p>
-        <p><b>Joe Rogan</b></p>
-        <p class="wd-fg-color-other wd-font-sm">5,218 Tuiters</p><br/>
-    </div>
-    
-    <div class="wd-border-style wd-grid-row">
-        <div class="wd-grid-col-four-fifths-page wd-padding-fat">
-            <p class="wd-font-sm">The New York Times <span> ✅ </span> <span class="wd-fg-color-other"> • Just now</span></p>
-            <p><b>NASA announced: We're sending a new crew to the
-                <a class="wd-fg-color-highlighted" href="https://twitter.com/Space_Station">@ Space_Station!</a></b></p>
-            <p class="wd-fg-color-other wd-font-sm">4.6M Tuiters</p><br/>
-          </div>
-          <div class="wd-grid-col-fifth-page">
-            <img class="wd-padding wd-rounded-corners-all-around wd-margin-all-around wd-float-right" 
-                src="../../images/NASA_400x400.jpeg" width="100px" height="100px" >
-          </div>
-          <div class="wd-float-done"></div>
-    </div>
-
-    <div class="wd-border-style wd-grid-row">
-        <div class="wd-grid-col-four-fifths-page wd-padding-fat">
-            <p class="wd-fg-color-other wd-font-sm">COVID-19 🎯 • Today</p>
-            <p><b>COVID-19: News and updates for The Great Seattle</b></p>
-            <p><br/></p>
-          </div>
-          <div class="wd-grid-col-fifth-page">
-            <img class="wd-padding wd-rounded-corners-all-around wd-margin-all-around wd-float-right" 
-                src="../../images/jeff-bezos-lauren-sanchez-jeff-bezos-girlfriend.jpg" width="100px" height="100px" >
-          </div>
-          <div class="wd-float-done"></div>
-    </div>
-
-    <div class="wd-border-style wd-grid-row">
-        <div class="wd-grid-col-four-fifths-page wd-padding-fat">
-            <p class="wd-fg-color-other wd-font-sm">COVID-19 🏁 • Yesterday</p>
-            <p><b>COVID-19: Who got COVID-19 has won most men’s tennis Grand Slams? Roger Federer, Rafael Nadal and Novak Djokovic ranked?</b></p>
-            <p><br/></p>
-          </div>
-          <div class="wd-grid-col-fifth-page">
-            <img class="wd-padding wd-rounded-corners-all-around wd-margin-all-around wd-float-right" 
-                src="../../images/rogerfederer.jpg" width="100px" height="100px" >
-          </div>
-          <div class="wd-float-done"></div>
-    </div>
-
-    <div class="wd-border-style wd-grid-row">
-        <div class="wd-grid-col-four-fifths-page wd-padding-fat">
-            <p class="wd-font-sm">ESPN News <span> 🏆 </span> <span class="wd-fg-color-other"> • Yesterday</span></p>
-            <p><b>Novak Djokovic faces Stefanos Tsitsipas in Australian Open final with records on the line</b></p>
-            <p class="wd-fg-color-other wd-font-sm">15.0M Tuiters</p><br/>
-          </div>
-          <div class="wd-grid-col-fifth-page">
-            <img class="wd-padding wd-rounded-corners-all-around wd-margin-all-around wd-float-right" 
-                src="../../images/Novak_400x400.jpeg" width="100px" height="100px" >
-          </div>
-          <div class="wd-float-done"></div>
-    </div>
-
-    <div class="wd-border-style wd-grid-row">
-        <div class="wd-grid-col-four-fifths-page wd-padding-fat">
-            <p class="wd-font-sm">Fox Sports 🎾 <span> </span> <span class="wd-fg-color-other"> • 2 days ago</span></p>
-            <p><b>‘She proved me wrong’: Sabalenka stuns in ‘ridiculous’ AO epic</b></p>
-            <p class="wd-fg-color-other wd-font-sm">578.5k Tuiters</p><br/>
-          </div>
-          <div class="wd-grid-col-fifth-page">
-            <img class="wd-padding wd-rounded-corners-all-around wd-margin-all-around wd-float-right" 
-                src="../../images/Rybakina_Elena.jpeg" width="100px" height="100px" >
-          </div>
-          <div class="wd-float-done"></div>
-    </div>
-
-    <br/> <br/> <br/> <br/> <br/>
-    <center>
-        <p class="wd-fg-color-highlighted">Loading more...</p> 
-    </center>
-    <br/> <br/> <br/>
-
-
 </body>
 
 </html>
+
+<!-- <div class="ytp-cued-thumbnail-overlay-image" style="background-image: url(&quot;https://i.ytimg.com/vi_webp/7CZTLogln34/maxresdefault.webp&quot;);"></div> -->
