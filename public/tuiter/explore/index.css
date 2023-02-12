@@ -1,77 +1,74 @@
 /*  A-4 criteria
 
-4 Tuiter (50pts)
+5 Challenge (50pts required for graduate students)
 
-For the tuiter section of this assignment you are going to continue implementing
-the Tuiter website started in previous assignments. You will use the Bootstrap and
-Fontawesome CSS libraries to reimplement the Explore screen. Do all your work in
-public/tuiter/explore/index.html and public/tuiter/explore/index.css.
+For the challenge section restyle the explore/index.html Webpage to look like the wireframe shown
+below. Implement style overrides in explore/index.css. The resulting screen doesn't have to be
+pixel perfect like the wireframe, but use the following as a guideline on what to focus on.
 
-Tuiter's explore screen displays a list of random tuits organized into several
-categories accessible by tabs.
+1. Borders: colors, widths and styles
+2. Tab: highlighted, unhighlighted, underlined, spacing
+3. Font and text: white vs gray color, size, justification
+4. White spacing: padding, margins, borders, and corners. General distance between elements and
+surrounding context
+5. Colors: background, foreground, and borders
+6. Icons: color, corner rounding, padding, sizing
+7. Forms and input fields: rounded corners, background colors, placeholders, button colors and sizes
+8. Positioning and sizing: white text and icon overlaid over large image
+9. Responsive: screen should be responsive as described in the Tuiter section
+10. General: general look and feel of Web page should look and feel as shown below
 
-An illustration is shown in the Extra extra large section that follows. The screen,
-as most Tuiter screens we'll work on, have three columns. The column on the left is
-a navigation sidebar with links to various screens throughout Tuiter. The column in
-the middle contains the main content, and the column on the right is another side
-bar with links to other users you might want to follow. The list of tuits in the
-main content, rendered in the center column, are categorized by For You, Trending,
-News, Sports, and Entertainment. The default selected tab is For You. The tabs point
-to for-you.html, trending.html, news.html, sports.html, and entertainment.html
-respectively. You don't need to implement those Webpages. The goal of this section
-is to implement the explore.html Webpage so that it looks and behaves as close as
-possible to how it is described here and displayed in the sections that follow.
-
-As you work on explore.html, the following is a few things worth pointing out,
-
-1. The navigation on the left has both icons and text
-2. The link to the current page is highlighted, e.g., # Explore
-3. There is a small margin at the top of the page, below the navigation links on
-   the left, below the search field, below the tabs
-4. The width of the Tuit button is the same as the navigation bar above it
-5. The main content is centered with equal margins on either side
-6. There's an equal spacing between the three columns
-7. The Follow buttons on the Who to follow side bar on the right are vertically centered
-8. The search field has a magnifying glass rendered within its border, and the text and
-   placeholder start to the right of the icon
-9. The image at the top of the middle column has a large white text overlayed on top of
-   it, but positioned in the bottom left corner of the image
-10. The cog on the right of the search field is vertically aligned with the search field
-11. The search field has rounded corners
-12. The borders of the avatar images under Who to follow are circles. Do not use circle
-    images. Use rounded corners instead
-13. Use images similar to the ones shown. Use the text shown as a hint to find images on
-    the Web
-14. Use the exact text shown
 */
 
 /* a4 -- Overriding Bootstrap icon style */
-
-.bi-three-dots.bi-three-dots-red {
-    color: white;
-    background: black;
-    max-height: min-content;
-    border-radius: 1em;
+.list-group .no-border {
+    border: none;
 }
 
 .btn-primary.override-bs {
+    height: 46px;
     border-radius: 2em;
+    text-align: center;
+    font-weight: bold;
+    background-color: #1d9bf0;
 }
 
-.btn-primary.override-bs2 {
+.btn-dark.override-bs2 {
     height: 32px;
     width: 78px;
     border-radius: 16px;
 }
 
-.wd-avater {
-    max-height: 42px;
-    max-width: 42px;
-    fill-rule: nonzero;
-    border-radius: 21px;
+.btn-hovered {
+    font-weight: bold;
 }
 
-.wd-icon-size-m {
+.wd-avater {
+    max-height: 60px;
+    max-width: 60px;
+    fill-rule: nonzero;
+    border-radius: 30px;
+}
+
+.wd-avater-gold {
+    max-height: 60px;
+    max-width: 60px;
+    fill-rule: nonzero;
+    border-radius: 6px;
+}
+
+.wd-blue-logo {
+    color: #1d9bf0;
+    font-weight: 800;
+    font-size: 1.5em;
+}
+
+.wd-circle-boarder {
+    background-color: rgb(241, 240, 240);
+    border-radius: 2em;
+}
+
+.wd-left-bar-style {
     font-size: 1.2em;
 }
 
@@ -98,6 +95,7 @@ As you work on explore.html, the following is a few things worth pointing out,
     height: 42px;
     text-indent: 48px;
     border-radius: 21px;
+    background-color: rgb(228, 238, 249);
 }
 
 .form-input:focus {
@@ -107,11 +105,69 @@ As you work on explore.html, the following is a few things worth pointing out,
 
 .wd-fg-color-gray {
     color: grey;
-    font-weight: normal; 
+    font-weight: normal;
+}
+
+.wd-mt-mb {
+    margin-top: 2px;
+    margin-bottom: 5px;
+}
+
+.nav-link.active.wd-style-active {
+    font-weight: 700;
+    color: black;
+    padding-bottom: 1em;
+    border-bottom: solid 4px #48a3f9;
 }
 
 .wd-content-img {
     max-width: 76px;
     max-height: 76px;
     border-radius: 8px;
+}
+
+.wd-gear-style {
+    font-size: 1.5em;
+    color: #cbdef9;
+}
+
+.fa-ellipsis-h {
+    color: gray;
+}
+
+.fa-square-arrow-up-right {
+    color: rgb(112, 112, 112);
+}
+
+.wd-fg-color-lightblue {
+    color: #1d9df0;
+}
+
+.wd-col-3-bg-color {
+    font-weight: 600;
+    background-color: rgb(228, 238, 249);
+}
+
+.wd-col-3-promoted-font {
+    font-size: 0.9em;
+    color: gray;
+    font-weight: 300;
+}
+
+.fa-circle-check.bg-blue {
+    color: #48a3f9;
+}
+
+.fa-circle-check.bg-gold {
+    color: #deb901;
+}
+
+.list-group-item.border-top-rounded {
+    border-top-right-radius: 18px;
+    border-top-left-radius: 18px;
+}
+
+.list-group-item.border-bottom-rounded {
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
 }

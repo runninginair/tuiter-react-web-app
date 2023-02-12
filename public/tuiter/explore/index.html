@@ -1,22 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- <head>
-   <meta charset="UTF-8">
-   <title>Lab3 CSS</title>
-</head> -->
 
 <head>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/regular.min.css"
+        integrity="sha512-3YMBYASBKTrccbNMWlnn0ZoEOfRjVs9qo/dlNRea196pg78HaO0H/xPPO2n6MIqV6CgTYcWJ1ZB2EgWjeNP6XA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link href="../styles.css" rel="stylesheet" />
 
@@ -30,72 +25,106 @@
     <!-- <div class="container-fluid mt-4"> -->
     <div class="container-fluid row mt-2">
 
-        <div class="col-xxl col-xl col-lg-1 col-md-1 col-sm-1 col-1 cols list-group ms-2 me-1">
+        <div class="col-xxl-2 col-xl col-lg-1 col-md-1 col-sm-1 col-1 cols list-group no-border ms-2 me-1">
 
-            <a href="#" class="list-group-item list-group-item-action">
-                <i class="fab fa-twitter"></i></a>
+            <a href="#" class="list-group-item list-group-item-action border-0 mb-2">
+                <i class="fa-solid fa-t wd-blue-logo"></i>
+            </a>
 
-            <!-- <a href="../home.html" class="list-group-item list-group-item-action">
-                <div class="row">
-                    <div class="col-xl-2 col-l-auto">
-                        <i class="bi bi-house-heart-fill"></i> 
+            <a href="../home.html" class="list-group-item list-group-item-action border-0 mb-2">
+                <div class="row wd-left-bar-style">
+                    <div class="col-2">
+                        <i class="fa-solid fa-home"></i>
                     </div>
-                    <div class="col-xl-7 d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
-                        <span> Home </span>
+                    <div class="col">
+                        <span class="d-none d-xl-inline-block d-xxl-inline-block"> Home </span>
                     </div>
                 </div>
-            </a> -->
-
-            <a href="../home.html" class="list-group-item list-group-item-action">
-                <i class="bi bi-house-heart-fill"></i>
-                <span class="d-none d-xl-inline-block d-xxl-inline-block"> Home</span>
-
             </a>
 
-            <a href="../explore/index.html" class="list-group-item list-group-item-action active">
-                <i class="bi bi-hash"></i>
-                <span class="d-none d-xl-inline-block d-xxl-inline-block"> Explore</span>
+            <a href="../explore/index.html" class="list-group-item list-group-item-action border-0 btn-hovered mb-2">
+                <div class="row wd-left-bar-style">
+                    <div class="col-2">
+                        <i class="fa-solid fa-hashtag"></i>
+                    </div>
+                    <div class="col">
+                        <span class="d-none d-xl-inline-block d-xxl-inline-block"> Explore </span>
+                    </div>
+                </div>
             </a>
 
-            <a href="#" class="list-group-item list-group-item-action">
-                <i class="bi bi-bell-fill"></i>
-                <span class="d-none d-xl-inline-block d-xxl-inline-block"> Notification</span>
+            <a href="#" class="list-group-item list-group-item-action border-0 mb-2">
+                <div class="row wd-left-bar-style">
+                    <div class="col-2">
+                        <i class="fa-regular fa-bell"></i>
+                    </div>
+                    <div class="col">
+                        <span class="d-none d-xl-inline-block d-xxl-inline-block"> Notification </span>
+                    </div>
+                </div>
             </a>
 
-            <a href="#" class="list-group-item list-group-item-action">
-                <i class="bi bi-envelope-at-fill"></i>
-                <span class="d-none d-xl-inline-block d-xxl-inline-block"> Messages</span>
+            <a href="#" class="list-group-item list-group-item-action border-0 mb-2">
+                <div class="row wd-left-bar-style">
+                    <div class="col-2">
+                        <i class="fa-regular fa-envelope"></i>
+                    </div>
+                    <div class="col">
+                        <span class="d-none d-xl-inline-block d-xxl-inline-block"> Messages </span>
+                    </div>
+                </div>
             </a>
 
-            <a href="../bookmarks/index.html" class="list-group-item list-group-item-action">
-                <i class="bi bi-bookmark-fill"></i>
-                <span class="d-none d-xl-inline-block d-xxl-inline-block"> Bookmarks</span>
+            <a href="../bookmarks/index.html" class="list-group-item list-group-item-action border-0 mb-2">
+                <div class="row wd-left-bar-style">
+                    <div class="col-2">
+                        <i class="fa-regular fa-bookmark"></i>
+                    </div>
+                    <div class="col">
+                        <span class="d-none d-xl-inline-block d-xxl-inline-block"> Bookmarks </span>
+                    </div>
+                </div>
             </a>
 
-            <a href="#" class="list-group-item list-group-item-action">
-                <i class="bi bi-list-check"></i>
-                <span class="d-none d-xl-inline-block d-xxl-inline-block"> Lists</span>
+            <a href="#" class="list-group-item list-group-item-action border-0 mb-2">
+                <div class="row wd-left-bar-style">
+                    <div class="col-2">
+                        <i class="fa-solid fa-fire"></i>
+                    </div>
+                    <div class="col">
+                        <span class="d-none d-xl-inline-block d-xxl-inline-block"> Top Articles </span>
+                    </div>
+                </div>
             </a>
 
-            <a href="../profile.html" class="list-group-item list-group-item-action">
-                <i class="bi bi-person-fill"></i>
-                <span class="d-none d-xl-inline-block d-xxl-inline-block"> Profile</span>
+            <a href="../profile.html" class="list-group-item list-group-item-action border-0 mb-2">
+                <div class="row wd-left-bar-style">
+                    <div class="col-2">
+                        <i class="fa-regular fa-user"></i>
+                    </div>
+                    <div class="col">
+                        <span class="d-none d-xl-inline-block d-xxl-inline-block"> Profile </span>
+                    </div>
+                </div>
             </a>
 
-            <a href="#" class="list-group-item list-group-item-action">
-                <span>
-                    <i class="bi bi-three-dots bi-three-dots-red"></i>
-                </span>
-                <span class="d-none d-xl-inline-block d-xxl-inline-block"> More</span>
+            <a href="../navigation.html" class="list-group-item list-group-item-action border-0 mb-2">
+                <div class="row wd-left-bar-style">
+                    <div class="col-2">
+                        <span class="wd-circle-boarder">
+                            <!-- <i class="fa-regular fa-circle fa-stack-1x"></i> -->
+                            <!-- <i class="fa-solid fa-circle-" style="z-index: -1; position: absolute;"></i> -->
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </span>
+                    </div>
+                    <div class="col">
+                        <span class="d-none d-xl-inline-block d-xxl-inline-block"> More </span>
+                    </div>
+                </div>
             </a><br />
 
-            <button class="btn btn-primary override-bs">
-                Tweet</button><br />
+            <button class="btn btn-primary override-bs">Tweet</button><br />
 
-            <!-- <a href="#"
-            class="list-group-item list-group-item-action disabled"
-            tabindex="-1"
-            aria-disabled="true">Ender's Game</a> -->
         </div><br />
 
         <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-10 col-sm-10 col-10 d-inline me-2">
@@ -106,102 +135,116 @@
                     <div class="col-11">
                         <div class="form">
                             <i class="fa fa-search" style="font-size: 1.2em;"></i>
-                            <input type="text" class="form-control form-input" placeholder="Search Tuiter...">
+                            <input type="text" class="form-control form-input" placeholder="Search Tuiter">
                             <span class="left-pan"></span>
                         </div>
                     </div>
                     <div class="col-1 float-right">
                         <a href="#">
-                            <i class="fas fa-cog fa-spin mt-1" style="font-size: 2em; color: #0d6efd;"></i>
+                            <i class="fas fa-cog fa-spin mt-1 wd-gear-style mt-2"></i>
                         </a>
                     </div>
                 </div>
             </div>
 
-            <div class="mt-1">
-                <ul class="nav nav-tabs">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="for-you.html"> For you </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="trending.html">Trending</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="news.html">News</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="sports.html">Sports</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="entertainment.html" tabindex="-1">Entertainment</a>
-                    </li>
-                </ul><br />
 
+            <div class="mt-3">
+                <!-- Nav Bar -->
+                <ul class="nav justify-content-evenly">
+                    <li class="nav-item">
+                        <a class="nav-link wd-fg-color-gray active wd-style-active" aria-current="page"
+                            href="for-you.html">For you</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wd-fg-color-gray" href="trending.html">Trending</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wd-fg-color-gray" href="news.html">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wd-fg-color-gray" href="sports.html">Sports</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wd-fg-color-gray" href="entertainment.html">Entertainment</a>
+                    </li>
+                </ul>
 
                 <!-- <span class="list-group-item list-group-item-action ">
                 <div class="ytp-cued-thumbnail-overlay-image" style="background-image: url(&quot;https://i.ytimg.com/vi_webp/7CZTLogln34/maxresdefault.webp&quot;);"></div>
             </span> -->
 
-                <a href="https://www.spacex.com/vehicles/starship/" class="list-group-item-action active">
-                    <img src="../../images/Starbase-Starship-Gazer-SpaceX.jpeg" class="img-fluid">
+                <a href="https://ausopen.com/" class="list-group-item-action active">
+                    <img src="../../images/Australian-Open-2023-LIVE.jpeg" class="img-fluid wd-mt-mb">
                 </a>
 
-                <a href="#" class="list-group-item list-group-item-action">
+                <a href="#" class="list-group-item list-group-item-action border-bottom-0">
                     <div class="row">
-                        <div class="col-10">
-                            <span class="wd-fg-color-gray"> Web Development</span><br />
-                            <b> ReactJS </b><i class="bi bi-check-circle-fill"></i>
-                            <span class="wd-fg-color-gray"> - 2h </span><br />
-                            <b>React (also known as React.js or ReactJS) is a free and open-source front-end
-                                JavaScript library on UI components. </b>
+                        <div class="col-11">
+                            <span class="wd-fg-color-gray"> Politics • Trending</span><br />
+                            <b> Seizures </b><br />
+                            <span class="wd-fg-color-gray"> 4,953 Tweets</span><br />
                         </div>
-                        <div class="col-2">
-                            <img src="../../images/ReactJS_logo.png" class="wd-content-img float-end">
+                        <div class="col">
+                            <i class="fa-solid fa-ellipsis-h"></i>
                         </div>
                     </div>
                 </a>
 
-                <a href="#" class="list-group-item list-group-item-action">
+                <a href="#" class="list-group-item list-group-item-action border-bottom-0">
                     <div class="row">
-                        <div class="col-10">
-                            <b> JavaScript </b><i class="bi bi-check-circle-fill"></i>
-                            <span class="wd-fg-color-gray"> - 2h </span><br />
-                            <b>JavaScript (JS) is a programming language that is one of the core
-                                technologies of the World Wide Web, alongside HTML and CSS. </b><br />
-                            <span class="wd-fg-color-gray"> 123K Tweets</span><br />
-
+                        <div class="col-11">
+                            <b> #InfinityPool </b><br />
+                            <span class="wd-fg-color-gray"> See the electrifyin triller Infinity Pool in theaters - If
+                                you dare</span><br />
+                            <i class="fa-solid fa-square-arrow-up-right"></i>
+                            <span class="wd-fg-color-gray"> Promoted by NEON</span><br />
                         </div>
-                        <div class="col-2">
-                            <img src="../../images/JavaScript_logo.png" class="wd-content-img float-end">
+                        <div class="col">
+                            <!-- <i class="fa-solid fa-ellipsis-h"></i> -->
                         </div>
                     </div>
                 </a>
 
-                <a href="#" class="list-group-item list-group-item-action">
+                <a href="#" class="list-group-item list-group-item-action border-bottom-0">
                     <div class="row">
-                        <div class="col-10">
-                            <span class="wd-fg-color-gray"> Web Development</span><br />
-                            <b> JQuery </b><br />
-                            <span class="wd-fg-color-gray"> 123K Tweets</span><br />
-
+                        <div class="col-11">
+                            <span class="wd-fg-color-gray"> Sports • Trending</span><br />
+                            <b> RIP Bean </b><br />
+                            <span class="wd-fg-color-gray"> 18K Tweets</span><br />
                         </div>
-                        <div class="col-2">
-                            <img src="../../images/JQuery_logo.png" class="wd-content-img float-end">
+                        <div class="col">
+                            <i class="fa-solid fa-ellipsis-h"></i>
                         </div>
                     </div>
                 </a>
 
-                <a href="#" class="list-group-item list-group-item-action">
+                <a href="#" class="list-group-item list-group-item-action border-bottom-0">
                     <div class="row">
-                        <div class="col-10">
-                            <span class="wd-fg-color-gray"> Web Development</span><br />
-                            <b> NodeJS </b><i class="bi bi-check-circle-fill"></i>
-                            <span class="wd-fg-color-gray"> - 2h </span><br />
-                            <span class="wd-fg-color-gray"> 123K Tweets</span><br />
+                        <div class="col-11">
+                            <span class="wd-fg-color-gray"> Politics • Trending</span><br />
+                            <b> Durham </b><br />
+                            <span class="wd-fg-color-gray"> Trending with</span>
+                            <span_without_space class="wd-fg-color-lightblue">Barr</span_without_space>
+                            <span class="wd-fg-color-gray">,</span>
+                            <span class="wd-fg-color-lightblue">Barr</span>
+
 
                         </div>
-                        <div class="col-2">
-                            <img src="../../images/NodeJS_logo_simple.png" class="wd-content-img float-end">
+                        <div class="col">
+                            <i class="fa-solid fa-ellipsis-h"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="list-group-item list-group-item-action border-bottom-0">
+                    <div class="row">
+                        <div class="col-11">
+                            <span class="wd-fg-color-gray">Trending in Bussiness and finance</span><br />
+                            <b> #DirectedEvolution </b><br />
+                            <span class="wd-fg-color-gray"> 172K Tweets</span><br />
+                        </div>
+                        <div class="col">
+                            <i class="fa-solid fa-ellipsis-h"></i>
                         </div>
                     </div>
                 </a>
@@ -209,96 +252,82 @@
             </div><br />
         </div>
 
-        <div class="col-xxl-4 col-xl-4 col-lg-4 list-group ms-2 me-2
+        <div class="col-xxl col-xl-4 col-lg-4 list-group ms-2 me-2
             d-none d-sm-none d-md-none d-lg-inline d-xl-inline d-xxl-inline">
 
-            <span class="list-group-item list-group-item-action" type="font-size: 1.2em"><b>Who to follow<b></span>
+            <span
+                class="list-group-item list-group-item-action border-0 wd-col-3-bg-color border-top-rounded mt-1 pt-2 pb-2"
+                type="font-size: 1.2em"><b>Who to follow<b></span>
 
-            <a href="../home.html" class="list-group-item list-group-item-action">
+            <a href="https://www.northeastern.edu/"
+                class="list-group-item list-group-item-action border-0 wd-col-3-bg-color">
                 <div class="row">
                     <div class="col-2">
-                        <img src="../../images/Java_logo.png" class="wd-avater">
+                        <img src="../../images/NEU_logo_red.png" class="wd-avater mb-2">
                     </div>
-                    <div class="col-6">
-                        Java <i class="bi bi-check-circle-fill"></i><br />
-                        <span class="wd-fg-color-gray">@Java</span>
+                    <div class="col-6 mt-2 mb-2 ms-2">
+                        Northeastern U. <i class="fa-solid fa-circle-check bg-blue"></i>
+                        <span class="wd-fg-color-gray">@Northeastern</span>
                     </div>
-                    <div class="col-2 mt-2 me-2">
-                        <button class="btn-primary override-bs2">Follow</button>
+                    <div class="col-2 mt-3 me-2">
+                        <button class="btn-dark override-bs2">Follow</button>
                     </div>
                 </div>
             </a>
 
-            <a href="../home.html" class="list-group-item list-group-item-action">
+            <a href="https://www.northeastern.edu/"
+                class="list-group-item list-group-item-action border-0 wd-col-3-bg-color">
                 <div class="row">
                     <div class="col-2">
-                        <img src="../../images/relativity_space_logo.avif" class="wd-avater">
+                        <img src="../../images/Matt_Wallence.jpeg" class="wd-avater mb-2">
                     </div>
-                    <div class="col-6">
-                        Relativity Space <i class="bi bi-check-circle-fill"></i><br />
-                        <span class="wd-fg-color-gray">@relativityspace</span>
+                    <div class="col-6 mt-2 mb-2 ms-2">
+                        Matt Wallace <i class="fa-solid fa-circle-check bg-blue"></i>
+                        <span class="wd-fg-color-gray">@MattWalace888</span>
                     </div>
-                    <div class="col-2 mt-2 me-2 float-end">
-                        <button class="btn-primary override-bs2">Follow</button>
+                    <div class="col-2 mt-3 me-2">
+                        <button class="btn-dark override-bs2">Follow</button>
                     </div>
                 </div>
             </a>
 
-            <a href="../home.html" class="list-group-item list-group-item-action">
+            <a href="https://www.northeastern.edu/"
+                class="list-group-item list-group-item-action border-0 wd-col-3-bg-color">
                 <div class="row">
                     <div class="col-2">
-                        <img src="../../images/virgin_logo.svg" class="wd-avater">
+                        <img src="../../images/pointsbet_logo.png" class="wd-avater-gold mb-2">
                     </div>
-                    <div class="col-6">
-                        Virgin Galactic <i class="bi bi-check-circle-fill"></i><br />
-                        <span class="wd-fg-color-gray">@virgingalactic</span>
+                    <div class="col-6 mt-2 mb-2 ms-2">
+                        PointsBet Sportsb... <i class="fa-solid fa-circle-check bg-gold"></i>
+                        <span class="wd-fg-color-gray">@PointsBetUSA</span><br />
+                        <i class="fa-solid fa-square-arrow-up-right pt-2 pb-2"></i>
+                        <span class="wd-fg-color-gray wd-col-3-promoted-font"> Promoted </span>
+
                     </div>
-                    <div class="col-2 mt-2 me-2 float-end">
-                        <button class="btn-primary override-bs2">Follow</button>
+                    <div class="col-2 mt-3 me-2">
+                        <button class="btn-dark override-bs2">Follow</button>
                     </div>
                 </div>
             </a>
 
-            <a href="../home.html" class="list-group-item list-group-item-action">
-                <div class="row">
-                    <div class="col-2">
-                        <img src="../../images/NASA_400x400.jpeg" class="wd-avater">
-                    </div>
-                    <div class="col-6">
-                        NASA <i class="bi bi-check-circle-fill"></i><br />
-                        <span class="wd-fg-color-gray">@NASA</span>
-                    </div>
-                    <div class="col-2 mt-2 me-2 float-end">
-                        <button class="btn-primary override-bs2">Follow</button>
-                    </div>
+            <a href="#" class="list-group-item list-group-item-action border-0 wd-col-3-bg-color border-bottom-rounded">
+                <div class="mt-2 mb-2 wd-fg-color-lightblue">
+                    Show more
                 </div>
             </a>
 
-            <a href="../home.html" class="list-group-item list-group-item-action">
-                <div class="row">
-                    <div class="col-2">
-                        <img src="../../images/Tesla_logo_500x500.jpeg" class="wd-avater">
-                    </div>
-                    <div class="col-6">
-                        Tesla <i class="bi bi-check-circle-fill"></i><br />
-                        <span class="wd-fg-color-gray">@Tesla</span>
-                    </div>
-                    <div class="col-2 mt-2 me-2 float-end">
-                        <button class="btn-primary override-bs2">Follow</button>
-                    </div>
-                </div>
-            </a>
+            <div class="mt-3 ms-3 me-3 wd-col-3-promoted-font">
+                <p>
+                    Terms of Service &nbsp; Privacy Policy &nbsp; Cookie Policy<br />
+                    Assessibility &nbsp; Ads info &nbsp; More <i class="fa-solid fa-ellipsis-h"></i><br />
+                    © 2023 Tuiter, Inc.
+                </p>
+            </div>
 
 
-            <!-- <a href="#"
-            class="list-group-item list-group-item-action disabled"
-            tabindex="-1"
-            aria-disabled="true">Ender's Game</a> -->
         </div><br />
 
     </div>
 </body>
 
 </html>
-
-<!-- <div class="ytp-cued-thumbnail-overlay-image" style="background-image: url(&quot;https://i.ytimg.com/vi_webp/7CZTLogln34/maxresdefault.webp&quot;);"></div> -->
