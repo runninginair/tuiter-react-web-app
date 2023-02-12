@@ -171,3 +171,16 @@ surrounding context
     border-bottom-left-radius: 18px;
     border-bottom-right-radius: 18px;
 }
+
+.flex-container-0.for_img {
+    position: relative;
+    text-align: left;
+    color: white;
+}
+
+/* Bottom left text */
+.bottom-left {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
