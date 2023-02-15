@@ -17,6 +17,21 @@
         alert('Hello World!');
     </script> -->
 
+    <!-- 2.8.1 Writing to the DOM -->
+    <h2>Writing to the DOM</h2>
+    <script>document.write('Welcome to JavaScript!')</script>
+    <h2>Calculating an HTML string</h2>
+    <script>
+        const renderTodos = (todos) =>
+            `<ul>
+                ${todos.map(todo => `<li>${todo}</li>`).join('')}
+            </ul>`;
+        const todos = ['Pickup kids', 'Feed dogs']
+        let html = renderTodos(todos);
+        document.write(html);
+    </script>
+
+
     <!-- 2.11 Binding to the DOM -->
     <h2 id="bind-by-id">Binding by ID</h2>
     <h3 class="bind-by-class">Binding 1 by Class</h3>
@@ -40,7 +55,7 @@
     <h2 id="show-me" class="im-hidden">Show me</h2>
 
     <!-- 2.17 Appending new elements -->
-    <h2>Appending new elements</h2>
+    <h2>2.17 Appending new elements</h2>
     <ul id="append-new-elements"></ul>
 
     <!-- 2.18 Removing and emptying content -->
@@ -63,12 +78,12 @@
 
 
     <!-- 2.19 Changing content -->
-    <h2>Change content</h2>
+    <h2>2.19 Change content</h2>
     <p id="change-this-text">Change me</p>
     <ul id="change-this-html"></ul>
 
     <!-- 2.20 Navigating up and down the DOM tree -->
-    <h2>Navigating the DOM hierarchy</h2>
+    <h2>2.20 Navigating the DOM hierarchy</h2>
     <div id="parent">
         This is the parent DIV
         <ul>
@@ -79,25 +94,24 @@
     </div>
 
     <!-- 2.21 Handling click events -->
-    <h2>Event handling</h2>
+    <h2>2.21 Event handling</h2>
     <h2 class="clickable">Click event</h2>
     <p class="clickable">Anything can be clickable</p>
     <button class="clickable">Not just me</button>
 
     <!-- 2.22 Event target -->
-    <h2 id="event-target">Event target</h2>
+    <h2 id="event-target">2.22 Event target</h2>
 
     <!-- 2.23 Hiding and showing content -->
-    <h3 id="hide-show">Hi/show element</h3>
+    <h3 id="hide-show">2.23 Hi/show element</h3>
     <button id="hide">Hide</button>
     <button id="show">Show</button>
 
 
-
-
+    <!-- 2.9 Loading jQuery library -->
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
     <script src="../../vendors/jquery/jquery-3.6.0.min.js"></script>
     <script src="index.js"></script>
-
 
 </body>
 
