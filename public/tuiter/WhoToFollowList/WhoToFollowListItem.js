@@ -1,7 +1,8 @@
-import who from "./who";
+import whom from "./who";
 
-function WhoToFollowListItem(who) {
-    for (let i = 0; i < who.length; i++) {
+function WhoToFollowListItem(whom) {
+
+    for (let i = 0; i < whom.length; i++) {
         
     }
 
