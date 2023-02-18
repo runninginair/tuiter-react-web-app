@@ -90,7 +90,7 @@ As you work on explore.html, the following is a few things worth pointing out,
 }
 
 .wd-fg-color-gray {
-    color: white;
+    color: grey;
     font-weight: normal; 
 }
 
@@ -103,4 +103,17 @@ As you work on explore.html, the following is a few things worth pointing out,
     max-width: 76px;
     max-height: 76px;
     border-radius: 8px;
+}
+
+.flex-container-0.for_img {
+    position: relative;
+    text-align: left;
+    color: rgb(28, 27, 27);
+}
+
+/* Bottom left text */
+.bottom-left {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
 }

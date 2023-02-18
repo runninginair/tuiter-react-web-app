@@ -10,23 +10,27 @@
  */
 
 const PostSummaryItem = (post) => {
+
+    let postTopic = (post.topic == ''? ``: `<span class="wd-fg-color-gray">${post.topic}</span><br />`)
+
     return (`
-
-    <a href="#" class="list-group-item list-group-item-action">
-        <div class="row">
-            <div class="col-10">
-                <span class="wd-fg-color-gray"> ${post.topic} </span><br />
-                    <b> ${post.userName} </b><i class="bi bi-check-circle-fill"></i>
-                <span class="wd-fg-color-gray"> - ${post.time} </span><br />
-                    <b> ${post.title} </b>
+        <a href="#" class="list-group-item list-group-item-action">
+            <div class="row pb-2 ps-2 pt-1">
+                <div class="col-10">
+                    ${postTopic}
+                    <span class="wd-fg-white">
+                        <b> ${post.userName} </b><i class="bi bi-check-circle-fill"></i>                
+                    </span>
+                    <span class="wd-fg-color-gray">  - ${post.time} </span><br />
+                    <span class="wd-fg-white">
+                        <b> ${post.title} </b>
+                    </span>
+                </div>           
+                <div class="col-2">
+                    <img src="${post.image}" class="wd-content-img me-2 mt-1 mb-1">
+                </div>
             </div>
-        
-            <div class="col-2">
-                <img src="${post.image}" class="wd-content-img float-end">
-            </div>
-        </div>
-    </a>
-
+        </a>
     `);
 }
 
