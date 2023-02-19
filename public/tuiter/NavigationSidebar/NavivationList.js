@@ -1,13 +1,13 @@
 import NavigationItem from "./NavigationItem.js";
 import Items from "./items.js";
 
-const NavigationList = () => {
+const NavigationList = (active) => {
+
     return (`
-            ${
-                Items.map(item => {
-                    return(NavigationItem(item));
-                }).join('')
-            }
+            ${Items.map(item => {
+        return (NavigationItem(item, active));
+    }).join('')
+        }
     `);
 }
 export default NavigationList;
