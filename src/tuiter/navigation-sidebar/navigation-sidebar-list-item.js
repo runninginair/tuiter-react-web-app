@@ -1,6 +1,6 @@
 import React from "react";
 
-const WhoToFollowListItem = (
+const NavigationSidebarListItem = (
     {
         who = { userName: 'NASA', handle: 'NASA', avatarIcon: 'nasa.png' }
     }
@@ -22,4 +22,5 @@ const WhoToFollowListItem = (
         </li>
     );
 };
-export default WhoToFollowListItem;
+
+export default NavigationSidebarListItem;

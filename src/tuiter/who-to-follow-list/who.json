@@ -3,19 +3,19 @@
         "_id": 123,
         "userName": "NASA",
         "handle": "NASA",
-        "avatarIcon": "NASA_logo.jpeg"
+        "avatarIcon": "NASA_400x400.jpeg"
     },
     {
         "_id": 234,
         "userName": "Tesla",
         "handle": "tesla",
-        "avatarIcon": "Tesla_logo.png"
+        "avatarIcon": "Tesla_logo_500x500.jpeg"
     },
     {
         "_id": 345,
         "userName": "SpaceX",
         "handle": "SpaceX",
-        "avatarIcon": "spacex_logo.png"
+        "avatarIcon": "Spacex_logo_big.jpeg"
     }
 ]
 
