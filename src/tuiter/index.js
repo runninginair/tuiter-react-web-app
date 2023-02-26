@@ -1,25 +1,12 @@
 import React from 'react';
-import { Link } from "react-router-dom";
-import Nav from "../nav";
+// import { Link } from "react-router-dom";
+// import Nav from "../nav";
+import ExploreComponent from "./explore";
 import NavigationSidebar from './navigation-sidebar';
 import WhoToFollowList from './who-to-follow-list/index';
-// import PostSummaryItem from './post-summary-list/post-summary-item';
+import HomeComponent from './home/index';
+import { Routes, Route } from "react-router";
 import PostSummaryList from './post-summary-list/index';
-import ExploreComponent from "./explore";
-
-// function Tuiter() {
-//     return (
-//         <div>
-//             <Nav />
-//             <NavigationSidebar active="home" />
-//             <WhoToFollowList />
-//             <PostSummaryList />
-//             <h1>Tuiter</h1>
-
-//         </div>
-//     );
-// }
-// export default Tuiter;
 
 function Tuiter() {
     return (
@@ -29,7 +16,12 @@ function Tuiter() {
             </div>
             <div className="col-10 col-md-10 col-lg-7 col-xl-6"
                 style={{ "position": "relative" }}>
-                <ExploreComponent />
+
+                <Routes>
+                    <Route path="home" element={<HomeComponent />} />
+                    <Route path="explore" element={<ExploreComponent />} />
+                </Routes>
+
             </div>
             <div className="d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4">
                 <WhoToFollowList />

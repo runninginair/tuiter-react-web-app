@@ -1,8 +1,7 @@
 import React from "react";
 import postsArray from './posts.json';
-import PostSummaryItem
+import PostSummaryItem from "./post-summary-item";
 
-    from "./post-summary-item";
 const PostSummaryList = () => {
     return (
         <ul className="list-group">

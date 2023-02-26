@@ -10,9 +10,8 @@ import './index.css';
 
 function Classes() {
     const color = 'blue';
-    // const dangerous = true;
-    const dangerous = false;
-
+    const dangerous = true;
+    // const dangerous = false;
 
     return (
         <div>

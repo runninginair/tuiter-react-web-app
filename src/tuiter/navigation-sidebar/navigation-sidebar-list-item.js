@@ -1,25 +1,26 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 
 const NavigationSidebarListItem = (
     {
-        who = { userName: 'NASA', handle: 'NASA', avatarIcon: 'nasa.png' }
+        item =
+        {
+            "_id": "home",
+            "title": "Home",
+            "href": "/",
+            "icon": "bi bi-house"
+        },
+        active
     }
 ) => {
     return (
-        <li className="list-group-item">
-            <div className="row">
-                <div className="col-2">
-                    <img className="rounded-circle" height={48} src={`/images/${who.avatarIcon}`} />
-                </div>
-                <div className="col-8">
-                    <div className="fw-bold">{who.userName}</div>
-                    <div>@{who.handle}</div>
-                </div>
-                <div className="col-2">
-                    <button className="btn btn-primary rounded-pill float-end">Follow</button>
-                </div>
-            </div>
-        </li>
+        <div>
+            <Link to={item.href} className={`list-group-item ${active === item.name ? 'active' : ''}`}>
+                <i className={item.icon}></i> &nbsp;
+                {item.title}
+            </Link>
+        </div>
     );
 };
 

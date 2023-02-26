@@ -1,51 +1,58 @@
 [
-
     {
-        "_id" : "home",
-        "title" : "Home",
-        "href" : "/",
-        "icon": "fa-solid fa-home"
+        "_id": 1001,
+        "name": "home",
+        "title": "Home",
+        "href": "/tuiter/home",
+        "icon": "bi bi-house-heart-fill"
     },
     {
-        "_id" : "explore",
-        "title" : "Explore",
-        "href": "/",
-        "icon": "fa-solid fa-hashtag"
+        "_id": 1002,
+        "name": "explore",
+        "title": "Explore",
+        "href": "/tuiter/explore",
+        "icon": "bi bi-hash"
     },
     {
-        "_id" : "notificaion",
-        "title" : "Notification",
+        "_id": 1003,
+        "name": "notificaion",
+        "title": "Notification",
         "href": "#",
-        "icon": "fa-regular fa-bell"
+        "icon": "bi bi-bell"
     },
     {
-        "_id" : "message",
-        "title" : "Messages",
+        "_id": 1004,
+        "name": "message",
+        "title": "Messages",
         "href": "#",
-        "icon": "fa-regular fa-envelope"
+        "icon": "bi bi-envelope"
     },
     {
-        "_id" : "bookmarks",
-        "title" : "Bookmarks",
+        "_id": 1005,
+        "name": "bookmarks",
+        "title": "Bookmarks",
         "href": "#",
-        "icon": "fa-regular fa-bookmark"
+        "icon": "bi bi-bookmarks"
     },
     {
-        "_id" : "top articles",
-        "title" : "Top Articles",
+        "_id": 1006,
+        "name": "top articles",
+        "title": "Top Articles",
         "href": "#",
-        "icon": "fa-solid fa-fire"
+        "icon": "bi bi-fire"
     },
     {
-        "_id" : "profile",
-        "title" : "Profile",
+        "_id": 1007,
+        "name": "profile",
+        "title": "Profile",
         "href": "../profile.html",
-        "icon": "fa-regular fa-user"
+        "icon": "bi bi-person-lines-fill"
     },
     {
-        "_id" : "more",
-        "title" : "More",
+        "_id": 1008,
+        "name": "more",
+        "title": "More",
         "href": "#",
-        "icon": "fa-solid fa-ellipsis"
+        "icon": "bi bi-three-dots"
     }
 ]

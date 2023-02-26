@@ -70,7 +70,7 @@ export default PostItem;
 
         <div class="wd-border-style">
             <div class="wd-bookmark-padding-left wd-bookmark-padding-top wd-float-left">
-                <img class="wd-rounded-diameter-48px" src=${post.avater} height="48px" width="48px">
+                <img class="wd-rounded-diameter-48px" src=${post.avater} height="48px" width="48px"/>
             </div>
 
             <div class="wd-main-padding">
@@ -83,7 +83,7 @@ export default PostItem;
                 <div class="wd-main-content-style">${post.content1}</div>
 
                 <div class="wd-img-content-style wd-border-style wd-rounded-all-corners">
-                    <img class="wd-img-style wd-rounded-top-corners" src=${post.image}>
+                    <img class="wd-img-style wd-rounded-top-corners" src=${post.image}/>
 
                     <p class="wd-title-style"><b>${post.title}</b></p>
                     <p class="wd-text-style">${post.content2}</p>
