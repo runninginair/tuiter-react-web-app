@@ -1,6 +1,6 @@
 import React from "react";
 import TodoItem from "./todo-item";
-import todos from "./todos";
+import todos from "./todos.json";
 
 const TodoList = () => {
     return (
@@ -8,12 +8,13 @@ const TodoList = () => {
             <h3>Todo List</h3>
             <ul>
                 {
-                    todos.map(todo => {
-                        return (<TodoItem todo={todo} />);
-                    })
+                    todos.map(todo => <TodoItem key={todo._id} todo={todo}/>)
                 }
             </ul>
         </>
     );
 }
 export default TodoList;
+
+
+// todos.map(todo => { return (<TodoItem todo= {todo} />); })

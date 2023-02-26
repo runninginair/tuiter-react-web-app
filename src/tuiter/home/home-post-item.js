@@ -31,13 +31,13 @@ const HomeComponentItem = (
 
                 <div className="col-auto">
 
-                    <div class="row">
-                        <div class="col-11">
+                    <div className="row">
+                        <div className="col-11">
                             <span className=" wd-author-font"> {post.userName} </span>
                             <i className={`bi bi-patch-check-fill ${post.isSubscribed ? 'wd-color-gold' : 'wd-color-blue'}`}></i>
                             <span className=" wd-handle-font-2 wd-fg-color-smoke"> @{post.handle} • {post.time}</span>
                         </div>
-                        <div class="col-1">
+                        <div className="col-1">
                             <i className=" bi bi-three-dots wd-fg-color-smoke float-right"></i>
                         </div>
                     </div>
@@ -45,15 +45,15 @@ const HomeComponentItem = (
                     <div className="wd-main-content-style">
                         <p>
                             {post.content1}
-                            <span class='wd-color-blue'>{post.signature}</span>
+                            <span className='wd-color-blue'>{post.signature}</span>
                         </p>
                     </div>
 
                     <div className="wd-img-content-style wd-post-border wd-rounded-corners">
                         <img className="wd-img-style wd-img-rounded-corners" src={post.image} />
                         <span>
-                            <p class="pt-2 ps-3 pe-3"><b>{post.title}</b></p>
-                            <p class="pt-0 ps-3 pe-3 pb-2">{post.content2}</p>
+                            <p className="pt-2 ps-3 pe-3"><b>{post.title}</b></p>
+                            <p className="pt-0 ps-3 pe-3 pb-2">{post.content2}</p>
                         </span>
                     </div>
 

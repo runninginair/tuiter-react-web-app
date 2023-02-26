@@ -19,13 +19,16 @@ const Styles = () => {
     const padding10px = {
         padding: "10px"
     }
+
+    // Warning: Unsupported style property background-color.
+    // Did you mean backgroundColor?
     const bgBlue = {
-        "background-color": "lightblue",
+        "backgroundColor": "lightblue",
         "color": "black",
         ...padding10px
     };
     const bgRed = {
-        "background-color": "lightcoral",
+        "backgroundColor": "lightcoral",
         ...colorBlack,
         ...padding10px
     };
@@ -33,7 +36,7 @@ const Styles = () => {
         <div>
             <h1>Styles</h1>
             <div style={{
-                "background-color": "lightyellow",
+                "backgroundColor": "lightyellow",
                 "color": "black", padding: "10px"
             }}>
                 Yellow background</div>
