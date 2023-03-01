@@ -26,7 +26,7 @@ const HomeComponentItem = (
         <div className="container mt-2 me-2 p-0">
             <div className="row">
                 <div className="col-1 mt-1">
-                    <img className="wd-avater-style" src={post.avater} />
+                    <img className="wd-avater-style" src={post.avater} alt="Avater image"/>
                 </div>
 
                 <div className="col-auto">

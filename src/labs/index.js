@@ -1,14 +1,19 @@
 import React from 'react';
-import Assignment6 from "./a6/index";
 import Nav from "../nav";
-import Classes from "./a6/classes/index";
+import Assignment6 from "./a6/index";
+import Assignment7 from "./a7/index";
+import { Routes, Route } from "react-router";
 
 function Labs() {
     return (
         <div>
-            <Nav/>
-            <Assignment6/>
-            <Classes />
+            <Nav />
+            <Routes>
+                <Route index
+                    element={<Assignment6 />} />
+                <Route path="/a7"
+                    element={<Assignment7 />} />
+            </Routes>
         </div>
     );
 }
