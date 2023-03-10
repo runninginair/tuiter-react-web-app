@@ -40,7 +40,7 @@ const NavigationSidebar = (
             <Link to="/" className={`list-group-item ${active === 'bookmarks' ? 'active' : ''}`}>
                 <i className="bi bi-bookmarks"></i>&nbsp; Bookmarks
             </Link>
-            <Link to="/" className={`list-group-item ${active === 'lists' ? 'active' : ''}`}>
+            <Link to="lists" className={`list-group-item ${active === 'lists' ? 'active' : ''}`}>
                 <i className="bi bi-list-check"></i>&nbsp; Lists
             </Link>
             <Link to="/tuiter/profile" className={`list-group-item ${active === 'profile' ? 'active' : ''}`}>

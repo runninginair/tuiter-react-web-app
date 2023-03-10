@@ -1,5 +1,5 @@
 import React from "react";
-import { useSelector } from "react-redux";  // import useSelector hook  from react-redux
+import { useSelector } from "react-redux";      // import useSelector hook  from react-redux
 
 /**     2.4 Create a Hello World Redux component
  * 
@@ -9,8 +9,8 @@ import { useSelector } from "react-redux";  // import useSelector hook  from rea
  * reducers, e.g., {message: 'Hello World'}, therefore, (hello) => hello.message returns
  * 'Hello World', and that's the value const message is initialized with.
  * The component goes on to render 'Hello World' in an H1 element.
- * @returns 
  */
+
 const HelloReduxExampleComponent = () => {
     // const message = useSelector((hello) => hello.message);  // extract 'Hello World' from reducer
     const message = useSelector((state) => state.hello.message);  // extract 'Hello World' from reducer
@@ -19,4 +19,5 @@ const HelloReduxExampleComponent = () => {
         <h1>{message}</h1>                                  // render <h1>Hello World</h1>
     );
 };
+
 export default HelloReduxExampleComponent;

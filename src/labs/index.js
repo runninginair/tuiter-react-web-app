@@ -1,7 +1,7 @@
 import React from 'react';
 import Nav from "../nav";
-import Assignment6 from "./a6/index";
-import Assignment7 from "./a7/index";
+import Assignment6 from "./a6";
+import Assignment7 from "./a7";
 import { Routes, Route } from "react-router";
 
 function Labs() {
@@ -11,10 +11,11 @@ function Labs() {
             <Routes>
                 <Route index
                     element={<Assignment6 />} />
-                <Route path="/a7"
+                <Route path="a7"
                     element={<Assignment7 />} />
             </Routes>
         </div>
     );
 }
+
 export default Labs;
