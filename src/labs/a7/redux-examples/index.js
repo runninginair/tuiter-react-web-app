@@ -5,21 +5,17 @@ import HelloReduxExampleComponent from "./hello-redux-example-component";
 
 // // import reducer that calculates/generates the data
 import hello from "./reducers/hello";
-
 import todos from "./reducers/todos-reducer";   // import the new reducer
+import Todos from "./todos-component";      // import new component to render todos
 
 // import { createStore } from "redux";    // import createStore to store data from reducers
 // instead of createStore, import the configureStore function
 import { configureStore } from "@reduxjs/toolkit";
-
-import Todos from "./todos-component";      // import new component to render todos
-
 import { Provider } from "react-redux";     // import Provider which will deliver the data
 
 // const store = createStore(hello);        // create data storage
 // combine all reducers into a single store each available through these namespaces
 const store = configureStore({ reducer: { hello, todos } });
-
 
 /**     2.4 Create a Hello World Redux component
  * 
@@ -29,8 +25,7 @@ const store = configureStore({ reducer: { hello, todos } });
  * in redux-examples/index.js.
  */
 
-/**
- * The Provider delivers the content of the store to all its child components.
+/** The Provider delivers the content of the store to all its child components.
  * This is done by invoking all the methods declared in useSelector in the components.
  */
 
@@ -39,8 +34,11 @@ const ReduxExamples = () => {
         <Provider store={store}>
             <div>
                 <h2>Redux Examples</h2>
-                <Todos />
+
                 <HelloReduxExampleComponent />
+
+                <Todos />
+
             </div>
         </Provider>
     );

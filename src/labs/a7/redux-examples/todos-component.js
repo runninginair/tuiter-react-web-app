@@ -60,12 +60,14 @@ const Todos = () => {
             <ul className="list-group">
 
                 <li className="list-group-item">
-                    <button onClick={createTodoClickHandler}
+                    <button 
+                        onClick={createTodoClickHandler}
                         className="btn btn-primary w-25 float-end">
                         Create
                     </button>
 
-                    <input onChange={todoChangeHandler}
+                    <input
+                        onChange={todoChangeHandler}
                         value={todo.do}
                         className="form-control w-75" />
                 </li>
@@ -76,8 +78,8 @@ const Todos = () => {
                     // display do property containing the todo text
                     todos.map((todo, index) =>
                         <li key={todo._id} className="list-group-item">
-                            <button onClick={() =>
-                                deleteTodoClickHandler(index)}
+                            <button
+                                onClick={() => deleteTodoClickHandler(index)}
                                 className="btn btn-danger float-end ms-2">
                                 Delete
                             </button>
@@ -89,9 +91,8 @@ const Todos = () => {
 
                             {todo.do}
                         </li>
-                    )
+                    )   
                 }
-
             </ul>
         </>
     );

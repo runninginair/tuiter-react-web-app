@@ -4,6 +4,7 @@ import HelloWorld from './labs/a6/hello-world';
 import Tuiter from './tuiter';
 import { BrowserRouter } from 'react-router-dom';
 import { Routes, Route } from 'react-router';
+import TodosthList from './screens/todosth/todosth-list';
 
 /**
  * Function called App that returns some statement.
@@ -22,6 +23,9 @@ function App() {
           <Route path="/*" element={<Labs />} />
           <Route path="/hello" element={<HelloWorld />} />
           <Route path="/tuiter/*" element={<Tuiter />} />
+
+          <Route path="/todosth" element={<TodosthList />} />
+
         </Routes>
       </div>
     </BrowserRouter>

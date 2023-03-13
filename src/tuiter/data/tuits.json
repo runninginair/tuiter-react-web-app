@@ -1,0 +1,72 @@
+[
+    {
+        "_id": 101,
+        "topic": "Tennis",
+        "userName": "Novak Djokovic",
+        "time": "45min",
+        "title": "I'm very grateful for the kind of energy and reception and love and support I got last night.",
+        "image": "Novak_400x400.jpeg",
+        "liked": true,
+        "replies": 2300,
+        "retuits": 4321,
+        "likes": 3456,
+        "handle": "@novak_djokovic",
+        "tuit": "\"I'm super blessed and grateful...\" paid tribute to the team behind his phenomenal success on the eve of another Grand Slam final."
+    },
+    {
+        "_id": 234,
+        "topic": "Space",
+        "userName": "SpaceX",
+        "time": "2h",
+        "title": "100s of SpaceX Starships land on Mars after a 6 month journey. 1000s of Martian colonistsbeing building Mars Base 1",
+        "image": "Spacex_logo_big.jpeg",
+        "liked": true,
+        "replies": 123,
+        "retuits": 432,
+        "likes": 2345,
+        "handle": "@spacex",
+        "tuit": "You want to wake up in the morning and think the future is going to be great - and that’s what being a spacefaring civilization is all about. It’s about believing in the future and thinking that the future will be better than the past. And I can’t think of anything more exciting than going out there and being among the stars."
+    },
+    {
+        "_id": 303,
+        "topic": "Space",
+        "userName": "Tesla",
+        "time": "5h",
+        "title": "Tesla Cybertruck lands on Mars and picks up the Curiosity rover on its 6' bed",
+        "image": "Tesla_logo_500x500.jpeg",
+        "liked": false,
+        "replies": 1233,
+        "retuits": 1432,
+        "likes": 3345,
+        "handle": "@spacex",
+        "tuit": "Autopilot is an advanced driver assistance system that enhances safety and convenience behind the wheel. When used properly, Autopilot reduces your overall workload as a driver. Each new Tesla vehicle is equipped with eight external cameras and powerful vision processing to provide an additional layer of safety."
+    },
+    {
+        "_id": 404,
+        "topic": "Space",
+        "userName": "NASA",
+        "title": "Thursday, March 16 *6:15 a.m. Coverage of the docking of the SpaceX-27 cargo craft to the International Space Station (docking is scheduled at 7:52 a.m. EDT)",
+        "time": "6h",
+        "image": "NASA_400x400.jpeg",
+        "liked": true,
+        "replies": 122,
+        "retuits": 4322,
+        "likes": 2345,
+        "handle": "@spacex",
+        "tuit": "You want to wake up in the morning and think the future is going to be great - and that’s what being a spacefaring civilization is all about. It’s about believing in the future and thinking that the future will be better than the past. And I can’t think of anything more exciting than going out there and being among the stars."
+    },
+    {
+        "_id": 500,
+        "topic": "Energy",
+        "userName": "Tesla",
+        "title": "Tesla FSD finally makes driving obsolete. After years of delay, Tesla Full Self Driving can drive you to work while you work, play, or sleep",
+        "time": "4d",
+        "image": "Tesla_logo_500x500.jpeg",
+        "liked": false,
+        "replies": 887,
+        "retuits": 788,
+        "likes": 778,
+        "handle": "@spacex",
+        "tuit": "Autopilot is an advanced driver assistance system that enhances safety and convenience behind the wheel. When used properly, Autopilot reduces your overall workload as a driver. Each new Tesla vehicle is equipped with eight external cameras and powerful vision processing to provide an additional layer of safety."
+    }
+]

@@ -1,6 +1,5 @@
 import React from "react";
-// import whoArray from './who.json';
-import WhoToFollowListItem from "./who-to-follow-list-item";
+import WhoToFollowListItem_a7 from "./who-to-follow-list-item";
 import { useSelector } from "react-redux";
 
 const WhoToFollowList = () => {
@@ -15,12 +14,14 @@ const WhoToFollowList = () => {
             </li>
             {
                 whoArray.map(who =>
-                    <WhoToFollowListItem
+                    <WhoToFollowListItem_a7 
                         key={who._id}
-                        who={who} />
+                        who={who}
+                    />
                 )
             }
         </ul>
     );
 };
+
 export default WhoToFollowList;

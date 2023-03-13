@@ -23,31 +23,40 @@ const NavigationSidebar = (
     return (
         <div className="list-group">
             <a className="list-group-item">
-                <i className="bi bi-twitter"></i>&nbsp; Tuiter
+                <i className="bi bi-twitter"></i> &nbsp;
+                <span className="d-none d-xl-inline-block d-xxl-inline-block"> Tuiter </span>
             </a>
             <Link to="home" className={`list-group-item ${active === 'home' ? 'active' : ''}`}>
-                <i className="bi bi-house-heart-fill"></i>&nbsp; Home
+                <i className="bi bi-house-heart-fill"></i> &nbsp;
+                <span className="d-none d-xl-inline-block d-xxl-inline-block"> Home </span>
             </Link>
             <Link to="explore" className={`list-group-item ${active === 'explore' ? 'active' : ''}`}>
-                <i className="bi bi-hash"></i>&nbsp; Explore
+                <i className="bi bi-hash"></i> &nbsp;
+                <span className="d-none d-xl-inline-block d-xxl-inline-block"> Explore </span>
             </Link>
             <Link to="/" className={`list-group-item ${active === 'notifications' ? 'active' : ''}`}>
-                <i className="bi bi-bell"></i>&nbsp; Notifications
+                <i className="bi bi-bell"></i> &nbsp;
+                <span className="d-none d-xl-inline-block d-xxl-inline-block"> Notifications </span>
             </Link>
             <Link to="/" className={`list-group-item ${active === 'messages' ? 'active' : ''}`}>
-                <i className="bi bi-envelope"></i>&nbsp; Messages
+                <i className="bi bi-envelope"></i> &nbsp;
+                <span className="d-none d-xl-inline-block d-xxl-inline-block"> Messages </span>
             </Link>
             <Link to="/" className={`list-group-item ${active === 'bookmarks' ? 'active' : ''}`}>
-                <i className="bi bi-bookmarks"></i>&nbsp; Bookmarks
+                <i className="bi bi-bookmarks"></i> &nbsp;
+                <span className="d-none d-xl-inline-block d-xxl-inline-block"> Bookmarks </span>
             </Link>
             <Link to="lists" className={`list-group-item ${active === 'lists' ? 'active' : ''}`}>
-                <i className="bi bi-list-check"></i>&nbsp; Lists
+                <i className="bi bi-list-check"></i> &nbsp;
+                <span className="d-none d-xl-inline-block d-xxl-inline-block"> Lists </span>
             </Link>
             <Link to="/tuiter/profile" className={`list-group-item ${active === 'profile' ? 'active' : ''}`}>
-                <i className="bi bi-person-lines-fill"></i>&nbsp; Profile
+                <i className="bi bi-person-lines-fill"></i> &nbsp;
+                <span className="d-none d-xl-inline-block d-xxl-inline-block"> Profile </span>
             </Link>
             <Link to="/" className={`list-group-item ${active === 'more' ? 'active' : ''}`}>
-                <i className="bi bi-three-dots"></i>&nbsp; More
+                <i className="bi bi-three-dots"></i> &nbsp;
+                <span className="d-none d-xl-inline-block d-xxl-inline-block"> More </span>
             </Link>
         </div>
     );
