@@ -14,14 +14,22 @@ const ProfileComponent = () => {
 
     return (
         <div className="container">
+
             {/* <h4>Admin Profile Component</h4> */}
 
             <div className="row">
-                <i className="col-1 bi bi-arrow-left ms-3 mt-3"></i>
-                <span className="col-auto">
+                <div className="col-2">
+                    <Link to="../home">
+                        <i className="col-1 bi bi-arrow-left ms-3 fs-4 mt-4 text-black "></i>
+                    </Link>
+                </div>
+
+                <div className="col-auto">
                     <h5> {profile.firstName} {profile.lastName} </h5>
                     <span>4,041 Tuits</span>
-                </span>
+                </div>
+
+
             </div>
 
             <img className="img-fluid"
@@ -31,15 +39,14 @@ const ProfileComponent = () => {
             <img width={120} className="rounded-circle ms-3 bottom-left"
                 src={`/images/${profile.profilePicture}`} alt='Profile Image' />
 
-            {/* <Link to="/tuiter/edit-profile" > */}
-            <Link to="edit-profile" >
-            <button className="btn btn-outline-dark rounded-5 mt-3 me-3 float-end">Edit Profile</button>
-            </Link>
+            <Link to="../edit-profile" >
+                <button className="btn btn-outline-dark rounded-5 mt-3 me-3 float-end">Edit Profile</button>
+            </Link><br />
 
-            <br />
-
-            <h5 className="fw-bold"> {profile.firstName} {profile.lastName} </h5>
-            <div className="text-secondary mb-4"> {profile.handle} </div>
+            <div className="mt-3 mb-4">
+                <span className="fw-bold fs-5"> {profile.firstName} {profile.lastName} </span><br />
+                <span className="text-secondary"> {profile.handle} </span>
+            </div>
 
             <div>
                 <p>{profile.bio}</p>
@@ -51,10 +58,11 @@ const ProfileComponent = () => {
                     {profile.location}
                 </div>
                 <div className="col-auto">
-                    <i className="bi bi-balloon"></i>&nbsp;Born {profile.dateOfBirth}
+                    <i className="bi bi-balloon"></i>&nbsp;
+                    Born {profile.dateOfBirth}
                 </div>
 
-                <div className="col-4">
+                <div className="col-3">
                     <i className="bi bi-calendar3"></i>&nbsp;
                     Joined {profile.dateJoined}
                 </div>
@@ -66,7 +74,7 @@ const ProfileComponent = () => {
                 &nbsp;&nbsp;&nbsp;
                 <span className="fw-bold">{profile.followersCount}</span>
                 <span className="text-secondary"> Followers </span>
-            </div><br/><br/>
+            </div><br /><br />
         </div>
     );
 };

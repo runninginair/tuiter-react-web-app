@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { updateAdmin } from "../profile/profile-reducer";
+import { updateUser } from "../profile/profile-reducer";
+import { Link } from "react-router-dom";
+
 
 // import TuitsList from "../tuits";
 // import WhatsHappening from "./whats-happening";
@@ -9,82 +11,113 @@ const EditProfile = () => {
 
     const { user } = useSelector((state) => state.user);
     const [profile, setProfile] = useState(user);
-    // const dispatch = useDispatch();
-    // const handleSaveButton = () => {
-    //     dispatch(updateAdmin(profile));
-    // }
+    const dispatch = useDispatch();
+    const handleSaveButton = () => {
+        dispatch(updateUser(profile));
+    }
 
 
     return (
         <>
             <div className="row">
-                <i className="col-1 bi bi-x"> </i>
-                <h4 className="col-9">Edit Profile</h4>
-                <button className="col-2 btn btn-dark rounded-5 float-end">Save</button>
+                <div className="col-1">
+                    <Link to="../profile" >
+                        <i className="bi bi-x fs-3 mt-1 text-black"> </i>
+                    </Link>
+                </div>
+
+                <h4 className="col-9 mt-2 ms-2">Edit Profile</h4>
+                <button 
+                    onClick={handleSaveButton}
+                    className="col btn btn-dark rounded-5 float-end me-4">Save</button>
+            </div>
+
+            <div>
+                <img className="img-fluid mt-3"
+                    src={`/images/${profile.bannerPicture}`} alt='Banner Image' /><br />
+                <img width={120} className="rounded-circle ms-3 mb-4"
+                    src={`/images/${profile.profilePicture}`} alt='Profile Image' />
             </div>
 
 
-            <label>First Name</label><br />
-            <input
-                placeholder="First Name"
-                value={profile.firstName}
-                onChange={(e) => setProfile({
-                    ...profile,
-                    firstName: e.target.value,
-                })} /><br /><br />
 
-            <label>Last Name</label><br />
-            <input value={profile.lastName}
-                onChange={(e) => setProfile({
-                    ...profile,
-                    lastName: e.target.value,
-                })} />
-                
-            <br /><br />
+            <div className="input-group ms-3 me-3 mb-5">
 
-            <label>Bio</label><br />
-            <textarea name="Text1" cols="40" rows="5" value={profile.bio} onChange={(e) => setProfile({
-                    ...profile,
-                    bio: e.target.value,
-                })}></textarea>
+                <div className="input-group-addon">
+                    <label className="text-secondary">First Name</label><br />
+                    <input
+                        size={71}
+                        placeholder="FirstName"
+                        value={profile.firstName}
+                        onChange={(e) => setProfile({
+                            ...profile,
+                            firstName: e.target.value,
+                        })} /><br /><br />
+                </div>
 
-            {/* <input
-                value={profile.bio}
-                onChange={(e) => setProfile({
-                    ...profile,
-                    bio: e.target.value,
-                })} /> */}
-                
-            <br /><br />
+                <div className="input-group-addon">
+                    <label className="text-secondary">Last Name</label><br />
+                    <input
+                        size={71}
+                        placeholder="LastName"
+                        value={profile.lastName}
+                        onChange={(e) => setProfile({
+                            ...profile,
+                            lastName: e.target.value,
+                        })} /><br /><br />
+                </div>
 
-            <label>Location</label><br />
-            <input
-                value={profile.location}
-                onChange={(e) => setProfile({
-                    ...profile,
-                    location: e.target.value,
-                })} /><br /><br />
+                <div className="input-group-addon">
+                    <label className="text-secondary">Bio</label><br />
+                    <textarea name="Text1" cols="70" rows="5" value={profile.bio} onChange={(e) => setProfile({
+                        ...profile,
+                        bio: e.target.value,
+                    })}></textarea><br /><br />
+                </div>
 
-            <label>website</label><br />
-            <input
-                value={profile.website}
-                onChange={(e) => setProfile({
-                    ...profile,
-                    address: e.target.value,
-                })} /><br /><br />
+                <div className="input-group-addon">
+                    <label className="text-secondary">Location</label><br />
+                    <input
+                        size={71}
+                        placeholder="City, State/Province"
+                        value={profile.location}
+                        onChange={(e) => setProfile({
+                            ...profile,
+                            location: e.target.value,
+                        })} /><br /><br />
+                </div>
 
-            <label>Birt date</label>   <button>Edit</button> <br/ >
-            <input
-                type={DataView}
-                onChange={(e) => setProfile({
-                    ...profile,
-                    address: e.target.value,
-                })} /><br /><br />
+                <div className="input-group-addon">
+                    <label className="text-secondary">Website</label><br />
+                    <input
+                        size={71}
+                        placeholder="https://yourURL"
+                        value={profile.website}
+                        onChange={(e) => setProfile({
+                            ...profile,
+                            website: e.target.value,
+                        })} /><br /><br />
+                </div>
 
-            Switch to professional 
-            <i className="bi bi-chevron-right float-end"></i>
+                <div className="input-group-addon">
+                    <label>Birth date</label> • <span className="text-primary">Edit</span> <br />
+                    <input
+                        type={DataView}
+                        size={71}
+                        placeholder="MM / DD / YYYY"
+                        value={profile.dateOfBirth}
+                        onChange={(e) => setProfile({
+                            ...profile,
+                            dateOfBirth: e.target.value,
+                        })} /><br /><br />
+                </div>
 
-            <br /><br />
+            </div>
+
+            <div className="fs-4">
+                <i className="bi bi-chevron-right float-end"></i>
+                <span className="ms-3">Switch to professional</span>
+            </div><br /><br /><br />
 
         </>
     );

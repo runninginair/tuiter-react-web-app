@@ -56,10 +56,15 @@ const NavigationSidebar = (
                 <i className="bi bi-list-check"></i> &nbsp;
                 <span className="d-none d-xl-inline-block d-xxl-inline-block"> Lists </span>
             </Link>
-            <Link to="/tuiter/profile" className={`list-group-item ${active === 'profile' ? 'active' : ''}`}>
+
+
+            <Link to="/tuiter/profile" className={`list-group-item 
+                ${(active === ('profile' || 'edit-profile'))? 'active' : ''}`}>
                 <i className="bi bi-person-lines-fill"></i> &nbsp;
                 <span className="d-none d-xl-inline-block d-xxl-inline-block"> Profile </span>
             </Link>
+
+
             <Link to="/" className={`list-group-item ${active === 'more' ? 'active' : ''}`}>
                 <i className="bi bi-three-dots"></i> &nbsp;
                 <span className="d-none d-xl-inline-block d-xxl-inline-block"> More </span>

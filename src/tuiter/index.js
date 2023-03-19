@@ -44,7 +44,7 @@ function Tuiter() {
 
                         <Route path="profile" element={<ProfileComponent />} />
 
-                        <Route path="profile/edit-profile" element={<EditProfile />} />
+                        <Route path="edit-profile" element={<EditProfile />} />
 
                     </Routes>
 

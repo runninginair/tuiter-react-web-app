@@ -22,7 +22,7 @@ const userSlice = createSlice({
     initialState: initialUser,
     reducers: {
         updateUser: (state, action) => {
-            state.admin = action.payload;
+            state.user = action.payload;
         },
     },
 });
