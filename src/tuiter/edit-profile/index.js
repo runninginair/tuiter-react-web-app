@@ -86,9 +86,6 @@ const EditProfile = () => {
 
             <br /><br />
 
-
-
-
         </>
     );
 };

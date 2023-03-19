@@ -8,7 +8,7 @@ const initialUser = {
         "profilePicture": "Novak_400x400.jpeg",
         "bannerPicture": "ND_banner.jpeg",
         "bio": "Serbian professional tennis player. He is currently ranked world No. 1 in men's singles by the Association of Tennis Professionals, and has held the top position for a record total 380 weeks, finishing as the year-end No. 1 an Open Era record seven times.",
-        "website": "youtube.com/webdevtv",
+        "website": "https://novakdjokovic.com/",
         "location": "Seattle, WA",
         "dateOfBirth": "May 22",
         "dateJoined": "03/2011",
