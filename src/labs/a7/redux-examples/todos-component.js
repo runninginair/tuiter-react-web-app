@@ -88,6 +88,8 @@ const Todos = () => {
                                 checked={todo.done}
                                 onChange={() => toggleTodoDone(todo)}
                                 className="me-2" />
+                            
+                            Done:{todo.done? " Yes " : " No "}&nbsp;&nbsp;
 
                             {todo.do}
                         </li>

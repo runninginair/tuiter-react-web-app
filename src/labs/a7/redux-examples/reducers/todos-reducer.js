@@ -8,7 +8,6 @@
  * file called todos-reducer.js. Copy the content below into the file.
  */
 
-
 import { createSlice } from '@reduxjs/toolkit'
 
 const initialTodos = [

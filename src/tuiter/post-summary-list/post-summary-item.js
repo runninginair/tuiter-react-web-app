@@ -20,7 +20,7 @@ const PostSummaryItem = (
                         <span className="text-secondary"> • {post.time}</span>
                          </div>
                     <div className="fw-bolder text-dark">{post.topic}</div>
-                    <div className="text-secondary">{post.title}</div>
+                    <div className="text-secondary">{post.tuit}</div>
                 </div>
                 <div className="col-2">
                     <img width={70} className="float-end rounded-3" src={`/images/${post.image}`} alt='Post Image' />

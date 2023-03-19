@@ -8,6 +8,7 @@ import HomeComponent_a7 from './home';
 
 import whoReducer from "./reducers/who-reducer";
 import tuitsReducer from "./tuits/tuits-reducer";       // import the new tuits reducer
+import userReducer from "./profile/profile-reducer"
 import PostSummaryList_a7 from './post-summary-list/index';
 import TuitsList from './tuits/index'
 import ProfileComponent from './profile';
@@ -19,7 +20,7 @@ import { Provider } from "react-redux";
 
 
 const store = configureStore(
-    { reducer: { who: whoReducer, tuits: tuitsReducer } }
+    { reducer: { who: whoReducer, tuits: tuitsReducer, user: userReducer } }
 );
 
 
@@ -43,12 +44,14 @@ function Tuiter() {
 
                         <Route path="profile" element={<ProfileComponent />} />
 
-                        <Route path="edit-profile" element={<EditProfile />} />
+                        <Route path="profile/edit-profile" element={<EditProfile />} />
 
                     </Routes>
 
                 </div>
-                <div className="d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4">
+                {/* <div className="d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4"> */}
+                <div className="d-none d-lg-block col-lg-4 col-xl-4 col-xxl-4 ">
+
                     <WhoToFollowList />
                 </div>
             </div>

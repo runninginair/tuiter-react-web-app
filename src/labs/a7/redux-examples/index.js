@@ -23,9 +23,9 @@ const store = configureStore({ reducer: { hello, todos } });
  * HelloReduxExampleComponent consuming the data. We connect the two 
  * -- data source and data consumer -- through a Provider as shown below
  * in redux-examples/index.js.
- */
-
-/** The Provider delivers the content of the store to all its child components.
+ * 
+ * Provider delivers data in store to child elements, component consumes the data.
+ * In a nutshell, the Provider delivers the content of the store to all its child components.
  * This is done by invoking all the methods declared in useSelector in the components.
  */
 
@@ -34,11 +34,8 @@ const ReduxExamples = () => {
         <Provider store={store}>
             <div>
                 <h2>Redux Examples</h2>
-
-                <HelloReduxExampleComponent />
-
                 <Todos />
-
+                <HelloReduxExampleComponent />
             </div>
         </Provider>
     );

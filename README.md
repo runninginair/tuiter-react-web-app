@@ -68,6 +68,33 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# tuiter-react-web-app
+### tuiter-react-web-app
 
-End
+
+# Redux in 100 Seconds
+[https://www.youtube.com/watch?v=_shA5Xwe8_4]
+
+Redux, a single source of truth for all the data in your JavaScript application. Modern web applications are represented as a complex tree of components. Components that constantly produce and share data called state and when state is decentralized it can become difficult to understand and test.
+
+Redux is both a pattern and library that helps developers implement complex state
+management requirements at scale. It was created by Dan Abramov and Andrew Clark at Facebook in 2015. It is one of the most loved and hated libraries in the react ecosystem.
+
+Redux relies on a single immutable object to store all of the application state, kind like a client-side database. To change the state like when a button is clicked an action will be dispatched which has a name like an event and a payload with a data that it want to change. Remember the store is immutable, so to change the state of the application an entirely new object is created by passing the current state and action payload into a reducer function which returns a new object with the entrie application state. The end result is a one way data flow that is predictable and testable, and it also opens the door to awesome dev tools that allow you to time travel through your application's data, but it comes at a cost of additional boilerplate code that might add too much complexty to a smaller project.
+
+                                     (Immutable Object)
+            --> Action ---> Reducer -----> Store -----> 
+           |                                           |
+  Dispatch |                                           | Subscribe
+           |                                           |
+            <--------  Web Application UI <------------
+                            (Frontend)
+
+To get started, create a react app with your favorite tool then install the redux toolkit. First, use configure store to setup the global store objext which will regiser any reducers defined elsewhere in the code.
+
+Then provider will make its data accessible to the entire component tree, next create a slice like pizza o represent some data in the store, it should have a unique name and initialstate, but most importantly it contains a collection of reducers which are functions that take the old state and an action then define the logic required to change the state redux toolkit will automatically generate actions that correspond to the names of these reducer functions, we can export them put them to use in an actual UI component.
+
+The beauty of redux is that we can select data anywhere in the application without the need for context or prop-drilling. Instead, we can grab any reactive value or slice in the store with the { useSelector } hook. Now, to change the application's data, an action needs to be dispatched to the store that can be accomlished with the use dispatch hook which might send an action name and data payload on a normal browser event like a button click. Now, the server application and install the Redux devtools browser extension unlike a normal project you're able to inspect and debug the entire timeline of actions and state changes in your application.
+
+
+
+[End]

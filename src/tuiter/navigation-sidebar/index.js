@@ -34,15 +34,21 @@ const NavigationSidebar = (
                 <i className="bi bi-hash"></i> &nbsp;
                 <span className="d-none d-xl-inline-block d-xxl-inline-block"> Explore </span>
             </Link>
-            <Link to="/" className={`list-group-item ${active === 'notifications' ? 'active' : ''}`}>
+
+            <Link to="/" className={`list-group-item ${active === 'lab' ? 'active' : ''}`}>
+                <i className="bi-asterisk"></i> &nbsp;
+                <span className="d-none d-xl-inline-block d-xxl-inline-block"> Labs </span>
+            </Link>
+
+            <Link to="notifications" className={`list-group-item ${active === 'notifications' ? 'active' : ''}`}>
                 <i className="bi bi-bell"></i> &nbsp;
                 <span className="d-none d-xl-inline-block d-xxl-inline-block"> Notifications </span>
             </Link>
-            <Link to="/" className={`list-group-item ${active === 'messages' ? 'active' : ''}`}>
+            <Link to="messages" className={`list-group-item ${active === 'messages' ? 'active' : ''}`}>
                 <i className="bi bi-envelope"></i> &nbsp;
                 <span className="d-none d-xl-inline-block d-xxl-inline-block"> Messages </span>
             </Link>
-            <Link to="/" className={`list-group-item ${active === 'bookmarks' ? 'active' : ''}`}>
+            <Link to="bookmarks" className={`list-group-item ${active === 'bookmarks' ? 'active' : ''}`}>
                 <i className="bi bi-bookmarks"></i> &nbsp;
                 <span className="d-none d-xl-inline-block d-xxl-inline-block"> Bookmarks </span>
             </Link>

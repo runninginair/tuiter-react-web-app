@@ -31,14 +31,26 @@ const tuitsSlice = createSlice(
             },
 
             deleteTuit(state, action) {
-                const index = state
-                    .findIndex(tuit =>
-                        tuit._id === action.payload._id);
+                const index = state.findIndex(tuit =>
+                    tuit._id === action.payload);
                 state.splice(index, 1);
+            },
+
+            likedToggle(state, action) {
+                const tuit = state.find((tuit) =>
+                    tuit._id === action.payload._id);
+                tuit.liked = !tuit.liked;
             }
+
+            // todoDoneToggle(state, action) {
+            //     const todo = state.find((todo) =>
+            //         todo._id === action.payload._id)
+            //     todo.done = !todo.done
+            // }
+
         }
     }
 );
 
-export const { createTuit, deleteTuit } = tuitsSlice.actions;     // export reducer function
+export const { createTuit, deleteTuit, likedToggle } = tuitsSlice.actions;     // export reducer function
 export default tuitsSlice.reducer;

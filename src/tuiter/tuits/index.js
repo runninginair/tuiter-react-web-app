@@ -1,10 +1,10 @@
 import React from "react";
 // import PostSummaryItem2 from "./post-summary-item";
 import { useSelector } from "react-redux";
-import TuitItem_a7 from "./tuits-item";
-import TuitStats from "./tuits-stats"
+import TuitItem from "./tuits-item";
+// import TuitStats from "./tuits-stats"
 
-const TuitsList_a7 = () => {
+const TuitsList = () => {
     const postsArray = useSelector(
         state => state.tuits
     );
@@ -12,10 +12,10 @@ const TuitsList_a7 = () => {
     return (
         <ul className="list-group">
             {
-                postsArray.map(post =>
-                    <TuitItem_a7
-                        key={post._id}
-                        post={post} 
+                postsArray.map(tuit =>
+                    <TuitItem
+                        key={tuit._id}
+                        tuit={tuit}
                     />
                 )
             }
@@ -23,4 +23,4 @@ const TuitsList_a7 = () => {
     );
 };
 
-export default TuitsList_a7;
+export default TuitsList;

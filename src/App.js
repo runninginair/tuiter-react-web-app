@@ -2,9 +2,17 @@ import React from 'react';
 import Labs from './labs';
 import HelloWorld from './labs/a6/hello-world';
 import Tuiter from './tuiter';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Link } from 'react-router-dom';
 import { Routes, Route } from 'react-router';
 import TodosthList from './screens/todosth/todosth-list';
+import ProfileScreenDemo from './screens/profile-demo/profile-screen-demo';
+import { Provider } from 'react-redux';
+import store from './tuiter/data/store';
+import HomScreenDemo from './screens/profile-demo/home-screen';
+import CounterScreen from './screens/counter-screen';
+
+// For Mar 13 class modulers Redux 
+// import ProfileScreen2 from "";
 
 /**
  * Function called App that returns some statement.
@@ -17,18 +25,29 @@ import TodosthList from './screens/todosth/todosth-list';
  */
 function App() {
   return (
-    <BrowserRouter>
-      <div className="container">
-        <Routes>
-          <Route path="/*" element={<Labs />} />
-          <Route path="/hello" element={<HelloWorld />} />
-          <Route path="/tuiter/*" element={<Tuiter />} />
+    <Provider store={store}>
+      <BrowserRouter>
+        <div className="container">
 
-          <Route path="/todosth" element={<TodosthList />} />
+          {/* <!-- Following three are Course demo projects --> */}
+          {/* <Link to="/home-demo"> HomeDemo </Link> |
+          <Link to="/profile-demo"> ProfileDemo </Link> |
+          <Link to="/counter-demo"> CounterDemo </Link> */}
 
-        </Routes>
-      </div>
-    </BrowserRouter>
+          <Routes>
+            <Route path="/*" element={<Labs />} />
+            <Route path="/hello" element={<HelloWorld />} />
+            <Route path="/tuiter/*" element={<Tuiter />} />
+
+            <Route path="/todosth" element={<TodosthList />} />
+            <Route path="/home-demo" element={<HomScreenDemo />} />
+            <Route path="/profile-demo" element={<ProfileScreenDemo />} />
+            <Route path="/counter-demo" element={<CounterScreen />} />
+
+          </Routes>
+        </div>
+      </BrowserRouter>
+    </Provider>
   );
 }
 

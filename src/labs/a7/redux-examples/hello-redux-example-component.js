@@ -9,6 +9,15 @@ import { useSelector } from "react-redux";      // import useSelector hook  from
  * reducers, e.g., {message: 'Hello World'}, therefore, (hello) => hello.message returns
  * 'Hello World', and that's the value const message is initialized with.
  * The component goes on to render 'Hello World' in an H1 element.
+ * 
+ * 
+ *      2.5 Retrieving state from a reducer
+ * 
+ * Before we implemented the todos-reducer, we only had the hello reducer. When we combined
+ * the reducers we bound them to attributes hello and todos:
+ * const store = configureStore({reducer: {hello, todos}}).
+ * The state of each reducer is now accessible through these properties.
+ * We now need to retrieve the message from the hello sub state as shown below.
  */
 
 const HelloReduxExampleComponent = () => {
@@ -16,7 +25,9 @@ const HelloReduxExampleComponent = () => {
     const message = useSelector((state) => state.hello.message);  // extract 'Hello World' from reducer
 
     return (
-        <h1>{message}</h1>                                  // render <h1>Hello World</h1>
+        <div>
+            <h1>{message}</h1>
+        </div>
     );
 };
 
