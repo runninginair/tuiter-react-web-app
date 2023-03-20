@@ -1,19 +1,5 @@
 [
     {
-        "_id": 101,
-        "topic": "Tennis",
-        "userName": "Novak Djokovic",
-        "time": "45min",
-        "title": "I'm very grateful for the kind of energy and reception and love and support I got last night.",
-        "image": "Novak_400x400.jpeg",
-        "liked": true,
-        "replies": 2300,
-        "retuits": 4321,
-        "likes": 3456,
-        "handle": "@novak_djokovic",
-        "tuit": "\"I'm super blessed and grateful...\" paid tribute to the team behind his phenomenal success on the eve of another Grand Slam final."
-    },
-    {
         "_id": 234,
         "topic": "Space",
         "userName": "SpaceX",

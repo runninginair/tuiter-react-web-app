@@ -2,10 +2,11 @@ import React, { useState } from "react";
 
 import { createTuit } from "../tuits/tuits-reducer";        // import reducer function
 import { useDispatch } from "react-redux";                  // import dispatch hook
-
+import { useSelector } from "react-redux";
 
 const WhatsHappening = () => {
     let [whatsHappening, setWhatsHappening] = useState('');
+    const { user } = useSelector((state) => state.user);
     const dispatch = useDispatch();                         // retrieve dispatch function with hook
     const tuitClickHandler = () => {
         console.log(whatsHappening);
@@ -18,7 +19,9 @@ const WhatsHappening = () => {
     return (
         <div className="row">
             <div className="col-auto">
-                <img className="rounded-circle" height={48} src="/images/JavaScript_logo.png" />
+                {/* <img className="rounded-circle" height={48} src="/images/JavaScript_logo.png" /> */}
+                <img className="rounded-circle" height={48} src={`/images/${user.profilePicture}`} />
+
             </div>
             <div className="col-10">
                 <textarea value={whatsHappening} placeholder="What's happening?"

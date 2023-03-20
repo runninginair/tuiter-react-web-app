@@ -37,13 +37,28 @@
   }
 }
 
-/* .bottom-left {
+.wd-profile-avatar-style {
   position: absolute;
-  bottom: 10px;
-  left: 10px;
+  top: 185px;
+  left: 50px;
+  border: 3px solid #a3b8ff;
 }
 
-.fff-red {
-  color: red;
-  background-color: pink;
-} */
+
+.wd-input-style {
+  position: relative;
+}
+
+.wd-input-title-style {
+  font-size: 0.8em;
+  position: absolute;
+  top: 4px;
+  left: 7px;
+  background-color: white;
+  padding: 0 6px;
+}
+
+.wd-input-box-style {
+  padding-top: 25px;
+  padding-left: 10px;
+}

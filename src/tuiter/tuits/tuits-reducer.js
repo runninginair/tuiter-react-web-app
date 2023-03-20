@@ -1,20 +1,26 @@
 import { createSlice } from "@reduxjs/toolkit";
 import tuits from '../data/tuits.json';
+// import { useSelector } from "react-redux";
 
-const currentUser = {                           // create an object that represents the currently
-    "userName": "JavaScript",                         // logged in user which contains profile information
-    "handle": "@js",                          // such as username, their avatar logo, and handle.
-    "image": "JavaScript_logo.png",               // Later this will come from users login in.
+// const { user } = useSelector((state) => state.user);
+// const currentUser = user;
+
+const currentUser = {                        // create an object that represents the currently
+    "userName": "Novak Djokovic",            // logged in user which contains profile information
+    "handle": "@DjokerNole",                 // such as username, their avatar logo, and handle.
+    "image": "Novak_400x400.jpeg",           // Later this will come from users login in.
 };
-const templateTuit = {                          // create a template tuit object with some default
-    ...currentUser,                             // values and copy over the fields userName, handle and
-    "topic": "Programing",                           // image from the currentUser
+
+const templateTuit = {                       // create a template tuit object with some default
+    ...currentUser,                          // values and copy over the fields userName, handle and
+    "topic": "Programing",                   // image from the currentUser
     "time": "1min",
     "liked": false,
     "replies": 0,
     "retuits": 0,
     "likes": 0,
 }
+
 
 const tuitsSlice = createSlice(
     {

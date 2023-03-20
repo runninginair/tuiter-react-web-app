@@ -10,6 +10,7 @@ import { Provider } from 'react-redux';
 import store from './tuiter/data/store';
 import HomScreenDemo from './screens/profile-demo/home-screen';
 import CounterScreen from './screens/counter-screen';
+import './App.css';
 
 // For Mar 13 class modulers Redux 
 // import ProfileScreen2 from "";
@@ -30,9 +31,9 @@ function App() {
         <div className="container">
 
           {/* <!-- Following three are Course demo projects --> */}
-          <Link to="/home-demo"> HomeDemo </Link> |
+          {/* <Link to="/home-demo"> HomeDemo </Link> |
           <Link to="/profile-demo"> ProfileDemo </Link> |
-          <Link to="/counter-demo"> CounterDemo </Link>
+          <Link to="/counter-demo"> CounterDemo </Link> */}
 
           <Routes>
             <Route path="/*" element={<Labs />} />
