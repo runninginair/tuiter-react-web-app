@@ -35,7 +35,7 @@ const ProfileComponent = () => {
                 <img width={120} className="rounded-circle ms-3 wd-profile-avatar-style"
                     src={`/images/${profile.profilePicture}`} alt='Profile Image' />
 
-                <Link to="../edit-profile" >
+                <Link to="../profile/edit-profile" >
                     <button className="btn btn-outline-dark rounded-5 mt-3 me-3 float-end">Edit Profile</button>
                 </Link><br />
             </div>

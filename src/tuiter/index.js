@@ -44,7 +44,7 @@ function Tuiter() {
 
                         <Route path="profile" element={<ProfileComponent />} />
 
-                        <Route path="edit-profile" element={<EditProfile />} />
+                        <Route path="profile/edit-profile" element={<EditProfile />} />
 
                     </Routes>
 
@@ -59,6 +59,4 @@ function Tuiter() {
     );
 }
 
-export default Tuiter
-
-//                         <Route path="home" element={<HomeComponent />} />
+export default Tuiter;

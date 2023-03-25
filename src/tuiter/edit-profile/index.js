@@ -10,6 +10,7 @@ const EditProfile = () => {
     const dispatch = useDispatch();
     const handleSaveButton = () => {
         dispatch(updateUser(profile));
+        window.alert("Edit saved successfully!");
     };
 
     return (
@@ -24,7 +25,9 @@ const EditProfile = () => {
                 <h4 className="col-9 mt-2 ms-2">Edit Profile</h4>
                 <button
                     onClick={handleSaveButton}
-                    className="col btn btn-dark rounded-5 float-end me-4">Save</button>
+                    className="col btn btn-dark rounded-5 float-end me-4">                    
+                    Save
+                </button>
             </div>
 
             <div className="mb-5">

@@ -5,6 +5,7 @@ import Tuiter from './tuiter';
 import { BrowserRouter, Link } from 'react-router-dom';
 import { Routes, Route } from 'react-router';
 import TodosthList from './screens/todosth/todosth-list';
+import TodosScreen from './screens/todos-screen';
 import ProfileScreenDemo from './screens/profile-demo/profile-screen-demo';
 import { Provider } from 'react-redux';
 import store from './tuiter/data/store';
@@ -33,7 +34,8 @@ function App() {
           {/* <!-- Following three are Course demo projects --> */}
           {/* <Link to="/home-demo"> HomeDemo </Link> |
           <Link to="/profile-demo"> ProfileDemo </Link> |
-          <Link to="/counter-demo"> CounterDemo </Link> */}
+          <Link to="/counter-demo"> CounterDemo </Link> |
+          <Link to="/todos-demo"> TodosDemo</Link> */}
 
           <Routes>
             <Route path="/*" element={<Labs />} />
@@ -44,6 +46,7 @@ function App() {
             <Route path="/home-demo" element={<HomScreenDemo />} />
             <Route path="/profile-demo" element={<ProfileScreenDemo />} />
             <Route path="/counter-demo" element={<CounterScreen />} />
+            <Route path="/todos-demo" element={<TodosScreen />} />
 
           </Routes>
         </div>
