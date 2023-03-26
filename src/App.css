@@ -32,6 +32,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -43,7 +44,6 @@
   left: 50px;
   border: 3px solid #a3b8ff;
 }
-
 
 .wd-input-style {
   position: relative;

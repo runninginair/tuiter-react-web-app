@@ -39,14 +39,6 @@ const EditProfile = () => {
 
             <div className="input-group ms-3 me-3 mb-5">
 
-                {/* <label for="username">Username:</label>
-                <input type="text" id="username" name="username" title="Enter your username here" ></input> */}
-
-                {/* <div className="form-group">
-                    <label for="username">Username:</label>
-                    <input className="pt-5 pb-5" type="text" class="form-control" id="username" name="username" title="Enter your username here"></input>
-                </div> */}
-
                 <div className="input-group-addon wd-input-style">
                     <label className="wd-input-title-style text-secondary">First Name</label>
                     <input className="wd-input-box-style" type="text" size={68}

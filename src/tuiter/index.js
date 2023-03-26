@@ -8,9 +8,8 @@ import HomeComponent_a7 from './home';
 
 import whoReducer from "./reducers/who-reducer";
 import tuitsReducer from "./tuits/tuits-reducer";       // import the new tuits reducer
-import userReducer from "./profile/profile-reducer"
+import userReducer from "./profile/profile-reducer";
 import PostSummaryList_a7 from './post-summary-list/index';
-import TuitsList from './tuits/index'
 import ProfileComponent from './profile';
 import EditProfile from './edit-profile';
 
@@ -22,7 +21,6 @@ import { Provider } from "react-redux";
 const store = configureStore(
     { reducer: { who: whoReducer, tuits: tuitsReducer, user: userReducer } }
 );
-
 
 function Tuiter() {
     return (

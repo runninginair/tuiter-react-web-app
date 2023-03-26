@@ -31,7 +31,7 @@ function App() {
       <BrowserRouter>
         <div className="container">
 
-          {/* <!-- Following three are Course demo projects --> */}
+          {/* <!-- Following four links are Course demo projects --> */}
           {/* <Link to="/home-demo"> HomeDemo </Link> |
           <Link to="/profile-demo"> ProfileDemo </Link> |
           <Link to="/counter-demo"> CounterDemo </Link> |

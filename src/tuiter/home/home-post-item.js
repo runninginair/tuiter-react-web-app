@@ -26,7 +26,7 @@ const HomeComponentItem = (
         <div className="container mt-2 me-2 p-0">
             <div className="row">
                 <div className="col-1 mt-1">
-                    <img className="wd-avater-style" src={post.avater} alt="Avater image"/>
+                    <img className="wd-avater-style" src={post.avater} alt="Avater image" />
                 </div>
 
                 <div className="col-auto">
@@ -50,7 +50,7 @@ const HomeComponentItem = (
                     </div>
 
                     <div className="wd-img-content-style wd-post-border wd-rounded-corners">
-                        <img className="wd-img-style wd-img-rounded-corners" src={post.image} alt=''/>
+                        <img className="wd-img-style wd-img-rounded-corners" src={post.image} alt='' />
                         <span>
                             <p className="pt-2 ps-3 pe-3"><b>{post.title}</b></p>
                             <p className="pt-0 ps-3 pe-3 pb-2">{post.content2}</p>
@@ -86,4 +86,5 @@ const HomeComponentItem = (
 
     );
 };
+
 export default HomeComponentItem;

@@ -1,5 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 
+
 const initialUser = {
     user: {
         "firstName": "Novak",
@@ -29,5 +30,3 @@ const userSlice = createSlice({
 
 export default userSlice.reducer;
 export const { updateUser } = userSlice.actions;
-
-

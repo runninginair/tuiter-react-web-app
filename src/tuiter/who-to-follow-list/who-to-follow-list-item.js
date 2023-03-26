@@ -1,8 +1,9 @@
 import React from "react";
 
+
 const WhoToFollowListItem_a7 = (
     {
-        who = { 
+        who = {
             userName: 'NASA',
             handle: 'NASA',
             avatarIcon: 'nasa.png'
@@ -13,7 +14,7 @@ const WhoToFollowListItem_a7 = (
         <li className="list-group-item">
             <div className="row">
                 <div className="col-2">
-                    <img className="rounded-circle" height={48} src={`/images/${who.avatarIcon}`} alt='Avatar Image'/>
+                    <img className="rounded-circle" height={48} src={`/images/${who.avatarIcon}`} alt='Avatar Image' />
                 </div>
                 <div className="col-8">
                     <div className="fw-bold">{who.userName}</div>

@@ -1,5 +1,6 @@
 import React from "react";
 
+
 const PostSummaryItem = (
     {
         post = {
@@ -18,7 +19,7 @@ const PostSummaryItem = (
                     <div>
                         <span className="fw-bolder text-primary">{post.userName}</span>
                         <span className="text-secondary"> • {post.time}</span>
-                         </div>
+                    </div>
                     <div className="fw-bolder text-dark">{post.topic}</div>
                     <div className="text-secondary">{post.tuit}</div>
                 </div>
