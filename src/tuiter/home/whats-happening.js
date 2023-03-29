@@ -8,13 +8,20 @@ import { useSelector } from "react-redux";
 
 const WhatsHappening = () => {
     let [whatsHappening, setWhatsHappening] = useState('');
-    const { user } = useSelector((state) => state.user);
+    // const { user } = useSelector((state) => state.user);
     const dispatch = useDispatch();                         // retrieve dispatch function with hook
     const tuitClickHandler = () => {
         console.log(whatsHappening);
         const newTuit = {                                   // create new tuit
-            tuit: whatsHappening                            // with text typed in textarea
+            tuit: whatsHappening,                            // with text typed in textarea
+            username: "Novak Djokovic",
+            image: "https://pbs.twimg.com/profile_images/1219965365226065920/EBF8Rd9v_400x400.jpg",
+            handle: "@novak_djokovic",
+            time: "1min",
+            title: "Tennis",
+            topic: "ATP Tennis"
         }
+
         // dispatch(createTuit(newTuit));                      // send tuit as action payload
         dispatch(createTuitThunk(newTuit));                 // use thunk instead of reducer function
     }
@@ -22,7 +29,9 @@ const WhatsHappening = () => {
     return (
         <div className="row">
             <div className="col-auto">
-                <img className="rounded-circle" height={48} src={`/images/${user.profilePicture}`} />
+                {/* <img className="rounded-circle" height={48} src={`/images/${user.profilePicture}`} /> */}
+                <img className="rounded-circle" height={48}
+                    src={'https://pbs.twimg.com/profile_images/1219965365226065920/EBF8Rd9v_400x400.jpg'} />
             </div>
 
             <div className="col-10">

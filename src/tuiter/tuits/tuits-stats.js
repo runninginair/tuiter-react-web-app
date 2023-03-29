@@ -12,8 +12,8 @@ const TuitStats = (
             "replies": 0,
             "retuits": 0,
             "liked": false,
-            "likes": 0,
-            "dislikes": 0
+            "likes": 10,
+            "dislikes": 10
         }
     }
 ) => {

@@ -1,8 +1,10 @@
 import axios from 'axios';                              // import axios
-const TUITS_API = 'http://localhost:4000/api/tuits';    // location of HTTP services
 
 // (A-8) 7.5 Integrating Netlify React applications with remote Node servers
 // const TUITS_API = 'https://tuiter-node-server-app-cs1234-sp23.onrender.com/api/tuits';
+
+// const TUITS_API = 'http://localhost:4000/api/tuits';    // location of HTTP services
+const TUITS_API = "https://tuiter-node-server-app-eetw.onrender.com/api"
 
 
 export const createTuit = async (tuit) => {
@@ -21,7 +23,6 @@ export const deleteTuit = async (tid) => {
         .delete(`${TUITS_API}/${tid}`)              // append tuit's ID to URL
     return response.data                            // data contains response's status we'll ignore
 }                                                   // for now
-
 
 export const updateTuit = async (tuit) => {         // service function accepts tuit to send server
     const response = await axios                    // send HTTP PUT request appending tuit's ID

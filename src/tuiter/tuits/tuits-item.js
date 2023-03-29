@@ -8,10 +8,10 @@ import TuitStats from "./tuits-stats";
 const TuitItem = (
     {
         tuit = {
-            "userName": "Novak Djokovic",
+            "username": "Novak Djokovic",
             "time": "50mins",
             "title": "I'm very grateful for the kind of energy and reception and love and support I got last night.",
-            "image": "Novak_400x400.jpeg",
+            "image": "https://pbs.twimg.com/profile_images/1219965365226065920/EBF8Rd9v_400x400.jpg",
             "handle": "@novak_djokovic",
             "tuit": " TBD ",
         }
@@ -35,8 +35,9 @@ const TuitItem = (
                 <div className="col-auto mt-1">
                     <img className="float-end rounded-circle"
                         width={50}
-                        src={`/images/${tuit.image}`}
-                        alt='Avatar Image' />
+                        // src={`/images/${tuit.image}`}
+                        src={tuit.image}
+                        alt='Avatar image' />
                 </div>
 
                 <div className="col-10">

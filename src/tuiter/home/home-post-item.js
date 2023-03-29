@@ -4,18 +4,20 @@ const HomeComponentItem = (
     {
         post = {
             "_id": 2001,
-            "userName": "Novak Djokovic",
+            "username": "Novak Djokovic",
             "handle": "novak_djokovic",
             "signature": "@DjokerNole",
             "time": "50mins",
-            "avater": "../../images/Novak_400x400.jpeg",
+            //  "avater": "Novak_400x400.jpeg",
+            "avater": "https://pbs.twimg.com/profile_images/1219965365226065920/EBF8Rd9v_400x400.jpg",
             "image": "../../images/2023_AO_men_final.avif",
             "title": "I'm very grateful for the kind of energy and reception and love and support I got last night.",
             "content1": "\"I'm super blessed and grateful...\" ",
             "content2": "Led by our founders @DjokerNole and we have done great things in the past 15 years. ",
             "comments": "8976",
             "retweet": "1.2M",
-            "liked": "68.7K",
+            "likes": "68.7K",
+            "dislikes": "789",
             "isLiked": true,
             "isSubscribed": true
         }
@@ -33,7 +35,7 @@ const HomeComponentItem = (
 
                     <div className="row">
                         <div className="col-11">
-                            <span className=" wd-author-font"> {post.userName} </span>
+                            <span className=" wd-author-font"> {post.username} </span>
                             <i className={`bi bi-patch-check-fill ${post.isSubscribed ? 'wd-color-gold' : 'wd-color-blue'}`}></i>
                             <span className=" wd-handle-font-2 wd-fg-color-smoke"> @{post.handle} • {post.time}</span>
                         </div>
@@ -70,7 +72,7 @@ const HomeComponentItem = (
 
                         <div className={`col ${post.isLiked ? "wd-liked-style" : ""}`}>
                             <i className={`bi ${post.isLiked ? "bi-heart-fill" : "bi-heart"}`}></i>
-                            <span>&nbsp; &nbsp; {post.liked}</span>
+                            <span>&nbsp; &nbsp; {post.likes}</span>
                         </div>
 
                         <div className="col">
