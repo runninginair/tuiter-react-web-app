@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { deleteTuit } from "./tuits-reducer";
+// import { deleteTuit } from "./tuits-reducer";
+import { deleteTuitThunk } from "../../services/tuits-thunks";
 import { useDispatch } from "react-redux";
 import TuitStats from "./tuits-stats";
 
@@ -18,8 +19,15 @@ const TuitItem = (
 ) => {
     const dispatch = useDispatch();
     const deleteTuitHandler = (id) => {
-        dispatch(deleteTuit(id));
+        // dispatch(deleteTuit(id));
+        dispatch(deleteTuitThunk(id));
     };
+
+// const TuitItem = () => {
+//     const dispatch = useDispatch();
+//     const deleteTuitHandler = (id) => {
+//         dispatch(deleteTuitThunk(id));
+//     }
 
     return (
         <li className="list-group-item">
@@ -35,18 +43,18 @@ const TuitItem = (
                     <div>
                         <i className="bi bi-x-lg float-end"
                             onClick={() => deleteTuitHandler(tuit._id)}></i>
-                        <span className="fw-bold"> {tuit.userName} </span>
+                        <span className="fw-bold"> {tuit.username} </span>
                         <i className="bi bi-patch-check-fill text-primary"></i>
                         <span className="text-secondary"> {tuit.handle} • {tuit.time} </span>
                     </div>
 
-                    {/* <p>{post.title}</p> */}
+                    <h6>{tuit.title}</h6>
                     <div className="text-secondary">
                         {tuit.tuit && <p >{tuit.tuit}</p>}
                     </div>
 
                     {/* <TuitStats /> */}
-                    <TuitStats key={tuit._id} stats={tuit} />
+                    <TuitStats key={tuit._id} tuit={tuit} />
 
                 </div>
             </div>

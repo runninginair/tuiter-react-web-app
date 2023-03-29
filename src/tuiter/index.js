@@ -19,7 +19,11 @@ import { Provider } from "react-redux";
 
 
 const store = configureStore(
-    { reducer: { who: whoReducer, tuits: tuitsReducer, user: userReducer } }
+    { reducer: { 
+        who: whoReducer, 
+        /* rename tuitsReducer property (tuits -> tuitsData) since now it's not just an array. */
+        tuitsData: tuitsReducer,
+        user: userReducer } }
 );
 
 function Tuiter() {

@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 
-import { createTuit } from "../tuits/tuits-reducer";        // import reducer function
+// import { createTuit } from "../tuits/tuits-reducer";        // wont be using the reducer function anymore
+import { createTuitThunk } from "../../services/tuits-thunks"; // we'll be using the createTuitThunk instead
+
 import { useDispatch } from "react-redux";                  // import dispatch hook
 import { useSelector } from "react-redux";
 
@@ -13,7 +15,8 @@ const WhatsHappening = () => {
         const newTuit = {                                   // create new tuit
             tuit: whatsHappening                            // with text typed in textarea
         }
-        dispatch(createTuit(newTuit));                      // send tuit as action payload
+        // dispatch(createTuit(newTuit));                      // send tuit as action payload
+        dispatch(createTuitThunk(newTuit));                 // use thunk instead of reducer function
     }
 
     return (
