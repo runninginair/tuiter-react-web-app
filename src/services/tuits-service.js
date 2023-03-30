@@ -4,7 +4,7 @@ import axios from 'axios';                              // import axios
 // const TUITS_API = 'https://tuiter-node-server-app-cs1234-sp23.onrender.com/api/tuits';
 
 // const TUITS_API = 'http://localhost:4000/api/tuits';    // location of HTTP services
-const TUITS_API = "https://tuiter-node-server-app-eetw.onrender.com/api"
+const TUITS_API = "https://tuiter-node-server-app-eetw.onrender.com/api/tuits";
 
 
 export const createTuit = async (tuit) => {
