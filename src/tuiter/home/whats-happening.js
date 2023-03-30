@@ -19,7 +19,12 @@ const WhatsHappening = () => {
             handle: "@novak_djokovic",
             time: "1min",
             title: "Tennis",
-            topic: "ATP Tennis"
+            topic: "ATP Tennis",
+            liked: false,
+            likes: 0,
+            dislikes: 0,
+            replies: 0,
+            retuits: 0
         }
 
         // dispatch(createTuit(newTuit));                      // send tuit as action payload
