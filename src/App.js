@@ -12,6 +12,12 @@ import store from './tuiter/data/store';
 import HomScreenDemo from './screens/profile-demo/home-screen';
 import CounterScreen from './screens/counter-screen';
 import './App.css';
+import Nav from './nav';
+
+import NapsterScreen from './napster';
+import NapsterSearchScreen from './napster/napster-search';
+import NapsterAlbumDetailsScreen from './napster/napster-album';
+import NapsterTrackDetailsScreen from './napster/napster-track';
 
 // For Mar 13 class modulers Redux 
 // import ProfileScreen2 from "";
@@ -29,7 +35,8 @@ function App() {
   return (
     <Provider store={store}>
       <BrowserRouter>
-        <div className="container">
+        <div className="container-fluid">
+          <Nav />
 
           {/* <!-- Following four links are Course demo projects --> */}
           {/* <Link to="/home-demo"> HomeDemo </Link> |
@@ -47,6 +54,14 @@ function App() {
             <Route path="/profile-demo" element={<ProfileScreenDemo />} />
             <Route path="/counter-demo" element={<CounterScreen />} />
             <Route path="/todos-demo" element={<TodosScreen />} />
+
+            <Route path="/napster" element={<NapsterScreen />} />
+            <Route path="/napster/search" element={<NapsterSearchScreen />} />
+            {/* Updated to url encoding as follows */}
+            <Route path="/napster/search/:searchTerm" element={<NapsterSearchScreen />} />
+
+            <Route path='/napster/album/:id' element={<NapsterAlbumDetailsScreen />} />
+            <Route path='/napster/track/:id' element={<NapsterTrackDetailsScreen />} />
 
           </Routes>
         </div>
